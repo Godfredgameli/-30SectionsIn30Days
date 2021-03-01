@@ -1,0 +1,224 @@
+@import url('https://fonts.googleapis.com/css2?family=Lato&display=swap');
+$primary: #000;
+$secondary: #121212;
+$neutral: #333333;
+$background: #fff;
+$font: Lato;
+$size: 16px;
+$normal: 400;
+$bold: 700;
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body{
+    width: 100%;
+    background-color: $background;
+    font-family: $font;
+    font-size: $size;
+    color: $primary;
+    font-weight: $normal;
+    overflow-x: hidden;
+    .mainContainer{
+        height: 1000px !important;
+        .navbar{
+            margin: auto;
+            height: 70px;
+            width: 84%;
+            background-color: $background;
+            padding: 0;
+            margin-bottom: 120px;
+    
+            .navbar-brand{
+                color: $secondary;
+                font-weight: $bold;
+                font-size: 20px;
+                line-height: 24px;
+            }
+    
+            .navbar-collapse{
+                justify-content: flex-end;
+                .navbar-nav{
+                    .nav-item{
+                        margin: 0 10px;
+                        .nav-link{
+                            color: $primary;
+                            padding: 10px 60px;
+                            font-weight: $bold;
+                            transition: all;
+                            transition-duration: 1s;
+    
+                            &:hover, &:active, &:focus{
+                                border: 1px solid $secondary;
+                                border-radius: 8px;
+                                background-color: snow;
+                                filter: opacity(0.7);
+                                bottom: 5px;
+                            }
+                        }
+                    }
+                }
+            }
+            
+        }
+        .legend{
+            .legend__text{
+                display: flex;
+                align-items: center;
+                padding-left: 8%;
+                .introText{
+                    width: 65%;
+                    .introText__heading{
+                        font-weight: $bold;
+                        color: black;
+                        font-size: 45px;
+                        line-height: 54px;
+                        margin-bottom: 30px;
+                    }
+                    .introText__description{
+                        color: $neutral;
+                        margin-bottom: 40px;
+                    }
+                    .introText__link{
+                        a{
+                            color: white;
+                            padding: 10px 100px;
+                            background-color: $secondary;
+                            border-radius: 8px;
+                            transition: all;
+                            transition-duration: 1s;
+
+                            &:hover, &:focus{
+                                text-decoration: none;
+                                filter: opacity(0.7);
+                            }
+                        }
+                    }
+                }
+            }
+            .legend__image{
+                display: flex;
+                justify-content: flex-end;
+                img{
+                    max-width: 100%;
+                    width: 100%;
+                    height: auto;
+                }
+            }
+        }
+    }
+    .footer{
+
+        text-align: center;
+        height: 50px;
+        width: 100%;
+        bottom: 0 !important;
+        margin-top: 50px;
+        background-color: $secondary;
+        color: $background;
+        display: flex;
+        align-items: flex-end;
+        justify-content: center;
+        .footer__text{
+            a{
+                color: red;
+
+                &:hover, &:focus{
+                    text-decoration: none;
+                }
+            }
+        }
+    }
+}
+
+@media screen and (max-width: 1440px){
+    body{
+        .mainContainer{
+            .legend{
+                .legend__text{
+                    .introText{
+                        width: 80%;
+                    }
+                }
+            }
+        }
+    }
+}
+@media screen and (max-width: 1350px){
+    body{
+        .mainContainer{
+            .legend{
+                .legend__text{
+                    .introText{
+                        width: 90%;
+                    }
+                }
+            }
+        }
+    }
+}
+@media screen and (max-width: 1200px){
+    body{
+        .mainContainer{
+            .navbar{
+                width: 94%;
+            }
+            .legend{
+                .legend__text{
+                    padding-left: 3%;
+                    .introText{
+                        width: 100%;
+                    }
+                }
+            }
+        }
+    }
+}
+@media screen and (max-width: 1000px){
+    body{
+        .mainContainer{
+            .navbar{
+                width: 98%;
+            }
+            .legend{
+                .legend__text{
+                    padding-left: 1%;
+                    .introText{
+                        width: 100%;
+                        .introText__heading{
+                            font-size: 40px;
+                        }
+                    }
+                }
+            }
+        }
+    }
+}
+@media screen and (max-width: 767px){
+    body{
+        .mainContainer{
+            height: 1100px !important;
+            .navbar{
+                width: 100%;
+            }
+            .legend{
+                padding: 0 4%;
+                .legend__text{
+                    padding: 0;
+                    height: 300px !important;
+                    .introText{
+                        width: 100%;
+                        text-align: center;
+                        .introText__heading{
+                            font-size: 32px;
+                        }
+                    }
+                }
+                .legend__image{
+                    height: 500px !important;
+                }
+            }
+        }
+    }
+}
