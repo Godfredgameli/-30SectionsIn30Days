@@ -12,6 +12,7 @@ $bold: 700;
     padding: 0;
     box-sizing: border-box;
 }
+/*Entire HTML body*/
 body{
     width: 100%;
     background-color: $background;
@@ -20,8 +21,10 @@ body{
     color: $primary;
     font-weight: $normal;
     overflow-x: hidden;
+    /*main container wrapper*/
     .mainContainer{
         height: 1000px !important;
+        /*Navigation menu section*/
         .navbar{
             margin: auto;
             height: 70px;
@@ -62,7 +65,9 @@ body{
             }
             
         }
+        /*legend section*/
         .legend{
+            /*legend introduction text*/
             .legend__text{
                 display: flex;
                 align-items: center;
@@ -97,6 +102,7 @@ body{
                     }
                 }
             }
+            /*legend image section*/
             .legend__image{
                 display: flex;
                 justify-content: flex-end;
@@ -108,8 +114,8 @@ body{
             }
         }
     }
+    /*footer section*/
     .footer{
-
         text-align: center;
         height: 50px;
         width: 100%;
