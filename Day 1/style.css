@@ -5,6 +5,7 @@
   box-sizing: border-box;
 }
 
+/*Entire HTML body*/
 body {
   width: 100%;
   background-color: #fff;
@@ -13,10 +14,14 @@ body {
   color: #000;
   font-weight: 400;
   overflow-x: hidden;
+  /*main container wrapper*/
+  /*footer section*/
 }
 
 body .mainContainer {
   height: 1000px !important;
+  /*Navigation menu section*/
+  /*legend section*/
 }
 
 body .mainContainer .navbar {
@@ -59,6 +64,11 @@ body .mainContainer .navbar .navbar-collapse .navbar-nav .nav-item .nav-link:hov
   bottom: 5px;
 }
 
+body .mainContainer .legend {
+  /*legend introduction text*/
+  /*legend image section*/
+}
+
 body .mainContainer .legend .legend__text {
   display: flex;
   align-items: center;
@@ -84,7 +94,7 @@ body .mainContainer .legend .legend__text .introText .introText__description {
 
 body .mainContainer .legend .legend__text .introText .introText__link a {
   color: white;
-  padding: 10px 100px;
+  padding: 24px 100px;
   background-color: #121212;
   border-radius: 8px;
   transition: all;
