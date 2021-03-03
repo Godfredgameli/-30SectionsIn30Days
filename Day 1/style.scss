@@ -38,6 +38,13 @@ body{
                 font-weight: $bold;
                 font-size: 20px;
                 line-height: 24px;
+                transition: all;
+                transition-duration: 1s;
+
+                &:hover, &:focus{
+                    transform: scale(1.1);
+                    filter:invert(0.5);
+                }
             }
     
             .navbar-collapse{
@@ -80,6 +87,7 @@ body{
                         font-size: 45px;
                         line-height: 54px;
                         margin-bottom: 30px;
+                        text-transform: capitalize;
                     }
                     .introText__description{
                         color: $neutral;
