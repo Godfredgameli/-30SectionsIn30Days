@@ -1,0 +1,262 @@
+@import url("https://fonts.googleapis.com/css2?family=Lato&display=swap");
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  outline: 1px solid red;
+}
+
+/*Entire HTML body*/
+body {
+  width: 100%;
+  background-color: #eee;
+  font-family: Lato;
+  font-size: 16px;
+  color: #111;
+  font-weight: 400;
+  overflow-x: hidden;
+  /*main container wrapper*/
+  /*footer section*/
+}
+
+body .mainContainer {
+  height: 900px !important;
+  /*Navigation menu section*/
+  /*legend section*/
+}
+
+body .mainContainer .navbar {
+  margin: auto;
+  height: 70px;
+  width: 84%;
+  background-color: #eee;
+  padding: 0;
+  margin-bottom: 120px;
+}
+
+body .mainContainer .navbar .navbar-brand {
+  color: #000;
+  font-weight: 700;
+  font-size: 20px;
+  line-height: 24px;
+  transition: all;
+  transition-duration: 1s;
+}
+
+body .mainContainer .navbar .navbar-brand:hover, body .mainContainer .navbar .navbar-brand:focus {
+  transform: scale(1.1);
+  filter: invert(0.5);
+}
+
+body .mainContainer .navbar .navbar-collapse {
+  justify-content: flex-end;
+}
+
+body .mainContainer .navbar .navbar-collapse .navbar-nav .nav-item {
+  margin: 0 10px;
+}
+
+body .mainContainer .navbar .navbar-collapse .navbar-nav .nav-item .nav-link {
+  color: #111;
+  padding: 10px 60px;
+  font-weight: 700;
+  transition: all;
+  transition-duration: 1s;
+}
+
+body .mainContainer .navbar .navbar-collapse .navbar-nav .nav-item .nav-link:hover, body .mainContainer .navbar .navbar-collapse .navbar-nav .nav-item .nav-link:active, body .mainContainer .navbar .navbar-collapse .navbar-nav .nav-item .nav-link:focus {
+  border-bottom: 1px solid #000;
+  filter: opacity(0.7);
+}
+
+body .mainContainer .legend {
+  width: 84%;
+  margin: auto;
+  /*legend introduction text*/
+  /*legend image section*/
+}
+
+body .mainContainer .legend .legend__text {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+body .mainContainer .legend .legend__text .introText {
+  width: 60%;
+}
+
+body .mainContainer .legend .legend__text .introText .introText__heading {
+  font-weight: 700;
+  color: black;
+  font-size: 45px;
+  line-height: 54px;
+  margin-bottom: 30px;
+  text-transform: capitalize;
+}
+
+body .mainContainer .legend .legend__text .introText .introText__description {
+  color: #333333;
+  margin-bottom: 40px;
+}
+
+body .mainContainer .legend .legend__text .introText .introText__link a {
+  color: white;
+  padding: 24px 100px;
+  background-color: #000;
+  border-radius: 8px;
+  transition: all;
+  transition-duration: 1s;
+}
+
+body .mainContainer .legend .legend__text .introText .introText__link a:hover, body .mainContainer .legend .legend__text .introText .introText__link a:focus {
+  text-decoration: none;
+  filter: opacity(0.7);
+}
+
+body .mainContainer .legend .legend__image {
+  display: flex;
+  flex-direction: column;
+}
+
+body .mainContainer .legend .legend__image .imagesWrapper {
+  background-image: url(images/Union.png);
+  background-repeat: no-repeat;
+  background-position: center;
+  display: flex;
+  flex-direction: column;
+}
+
+body .mainContainer .legend .legend__image .imagesWrapper .imagesWrapper__top {
+  display: flex;
+  align-items: center;
+}
+
+body .mainContainer .legend .legend__image .imagesWrapper .imagesWrapper__top .imagesWrapper__image {
+  max-width: 100%;
+  height: auto;
+}
+
+body .mainContainer .legend .legend__image .imagesWrapper .imagesWrapper__top .topLeft {
+  margin-top: 35px;
+}
+
+body .mainContainer .legend .legend__image .imagesWrapper .imagesWrapper__top .line {
+  width: 100%;
+  height: 0px;
+  content: " ";
+  border: 1px solid blue;
+  background-color: blue;
+  transform: skewY(-2deg);
+}
+
+body .mainContainer .legend .legend__image .imagesWrapper .imagesWrapper__bottom {
+  display: flex;
+  align-items: center;
+}
+
+body .mainContainer .legend .legend__image .imagesWrapper .imagesWrapper__bottom .imagesWrapper__image {
+  max-width: 100%;
+  height: auto;
+}
+
+body .mainContainer .legend .legend__image .imagesWrapper .imagesWrapper__bottom .bottomLeft {
+  margin-top: 130px;
+}
+
+body .mainContainer .legend .legend__image .imagesWrapper .imagesWrapper__bottom .bottomLine {
+  width: 100%;
+  height: 0px;
+  margin-top: 40px;
+  content: " ";
+  border: 1px solid blue;
+  background-color: blue;
+  transform: skew(0deg, -10deg);
+}
+
+body .footer {
+  text-align: center;
+  height: 50px;
+  width: 100%;
+  bottom: 0 !important;
+  margin-top: 50px;
+  background-color: #000;
+  color: #eee;
+  display: flex;
+  align-items: flex-end;
+  justify-content: center;
+}
+
+body .footer .footer__text a {
+  color: red;
+}
+
+body .footer .footer__text a:hover, body .footer .footer__text a:focus {
+  text-decoration: none;
+}
+
+@media screen and (max-width: 1440px) {
+  body .mainContainer .legend .legend__text .introText {
+    width: 80%;
+  }
+}
+
+@media screen and (max-width: 1350px) {
+  body .mainContainer .legend .legend__text .introText {
+    width: 90%;
+  }
+}
+
+@media screen and (max-width: 1200px) {
+  body .mainContainer .navbar {
+    width: 94%;
+  }
+  body .mainContainer .legend .legend__text {
+    padding-left: 3%;
+  }
+  body .mainContainer .legend .legend__text .introText {
+    width: 100%;
+  }
+}
+
+@media screen and (max-width: 1000px) {
+  body .mainContainer .navbar {
+    width: 98%;
+  }
+  body .mainContainer .legend .legend__text {
+    padding-left: 1%;
+  }
+  body .mainContainer .legend .legend__text .introText {
+    width: 100%;
+  }
+  body .mainContainer .legend .legend__text .introText .introText__heading {
+    font-size: 40px;
+  }
+}
+
+@media screen and (max-width: 767px) {
+  body .mainContainer {
+    height: 1100px !important;
+  }
+  body .mainContainer .navbar {
+    width: 100%;
+  }
+  body .mainContainer .legend {
+    padding: 0 4%;
+  }
+  body .mainContainer .legend .legend__text {
+    padding: 0;
+    height: 300px !important;
+  }
+  body .mainContainer .legend .legend__text .introText {
+    width: 100%;
+    text-align: center;
+  }
+  body .mainContainer .legend .legend__text .introText .introText__heading {
+    font-size: 32px;
+  }
+  body .mainContainer .legend .legend__image {
+    height: 500px !important;
+  }
+}
+/*# sourceMappingURL=style.css.map */
