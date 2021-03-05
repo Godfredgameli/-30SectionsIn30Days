@@ -69,8 +69,7 @@ body{
                         }
                     }
                 }
-            }
-            
+            }  
         }
         /*legend section*/
         .legend{
@@ -122,6 +121,11 @@ body{
                             color: black;
                             background-color: $button_bg;
                             border-radius: 4px;
+
+                            &:focus, &:hover{
+                                text-decoration: none;
+                                filter: invert(100%);
+                            }
                         }
                     }
                 }
@@ -142,7 +146,7 @@ body{
                         display: flex;
                         align-items: center;
                         .imagesWrapper__image{
-                            max-width: 100%;
+                            max-width: 30%;
                             height: auto;
                         }
                         .topLeft{
@@ -160,12 +164,32 @@ body{
                     .imagesWrapper__middle{
                         display: flex;
                         justify-content: center;
+                        img{
+                            max-width: 40%;
+                            height: auto;
+                        }
+                        .leftLine{
+                            transform: rotate(-40deg);
+                            border: 1px solid $line-color;
+                            margin-top: 15%;
+                            width: 30%;
+                            position: absolute;
+                            margin-right: 40%;
+                        }
+                        .rightLine{
+                            transform: rotate(90deg);
+                            border: 1px solid $line-color;
+                            margin-top: 5.5%;
+                            width: 16%;
+                            position: absolute;
+                            margin-left: 75%;
+                        }
                     }
                     .imagesWrapper__bottom{
                         display: flex;
                         align-items: center;
                         .imagesWrapper__image{
-                            max-width: 100%;
+                            max-width: 30%;
                             height: auto;
                         }
                         .bottomLeft{
@@ -238,13 +262,9 @@ body{
 }
 @media screen and (max-width: 1200px){
     body{
-        .mainContainer{
-            .navbar{
-                width: 94%;
-            }
+        .mainContainer{ 
             .legend{
                 .legend__text{
-                    padding-left: 3%;
                     .introText{
                         width: 100%;
                     }
@@ -256,12 +276,8 @@ body{
 @media screen and (max-width: 1000px){
     body{
         .mainContainer{
-            .navbar{
-                width: 98%;
-            }
             .legend{
                 .legend__text{
-                    padding-left: 1%;
                     .introText{
                         width: 100%;
                         .introText__heading{
@@ -276,15 +292,34 @@ body{
 @media screen and (max-width: 767px){
     body{
         .mainContainer{
-            height: 1100px !important;
+            height: 1200px !important;
+            width: 90%;
             .navbar{
                 width: 100%;
+                .navbar-collapse{
+                    .navbar-nav{
+                        .nav-item{
+                            .nav-link{
+                                background-color: $button_bg;
+                                transition: all;
+                                transition-duration: 1s;
+        
+                                &:hover, &:active, &:focus{
+                                    border-bottom: 1px solid $secondary;
+                                    filter: opacity(0.7);
+                                }
+                            }
+                        }
+                    }
+                }
             }
             .legend{
-                padding: 0 4%;
+                margin-top: 100px !important;
+                justify-content: space-between;
                 .legend__text{
                     padding: 0;
                     height: 300px !important;
+
                     .introText{
                         width: 100%;
                         text-align: center;
@@ -292,11 +327,120 @@ body{
                             font-size: 32px;
                         }
                     }
+                    .download{
+                        text-align: center;
+                    }
                 }
                 .legend__image{
+                    margin-top: 200px;
                     height: 500px !important;
+                    // background-size: 100% 100%;
+
+                    .imagesWrapper{
+                        .imagesWrapper__middle{
+                            .leftLine{
+                                transform: rotate(-55deg);
+                                margin-top: 18%;
+                                width: 29%;
+                                margin-right: 48%;
+                            }
+                            .rightLine{
+                                margin-top: 7.5%;
+                                width: 21%;
+                            }
+                        }   
+                    }
                 }
             }
+        }
+        .footer{
+            margin-top:300px;
+        }
+    }
+}
+@media screen and (max-width: 500px){
+    body{
+        .mainContainer{
+            height: 1100px !important;
+            .legend{
+                justify-content: space-between;
+                .legend__text{
+                    padding: 0;
+                    height: 300px !important;
+                }
+                .legend__image{
+                    margin-top: 200px;
+                    height: 400px !important;
+                    .imagesWrapper{
+                        .imagesWrapper__middle{
+
+                            .leftLine{
+                                transform: rotate(-68deg);
+                                margin-top: 21%;
+                                width: 37%;
+                                margin-right: 40%;
+                            }
+                            .rightLine{
+                                margin-top: 8%;
+                                width: 27%;
+                                margin-left: 60%;
+                            }
+                        }
+                        .imagesWrapper__bottom{
+                            .bottomLeft{
+                                margin-top: 100px;
+                            }
+                        }
+                    }
+
+                }
+            }
+        }
+        .footer{
+            margin-top:100px;
+        }
+    }
+}
+@media screen and (max-width: 380px){
+    body{
+        .mainContainer{
+            height: 1100px !important;
+            .legend{
+                justify-content: space-between;
+                .legend__text{
+                    padding: 0;
+                    height: 300px !important;
+                }
+                .legend__image{
+                    margin-top: 200px;
+                    height: 400px !important;
+                    .imagesWrapper{
+                        .imagesWrapper__middle{
+
+                            .leftLine{
+                                transform: rotate(-68deg);
+                                margin-top: 21%;
+                                width: 37%;
+                                margin-right: 40%;
+                            }
+                            .rightLine{
+                                margin-top: 8%;
+                                width: 27%;
+                                margin-left: 60%;
+                            }
+                        }
+                        .imagesWrapper__bottom{
+                            .bottomLeft{
+                                margin-top: 90px;
+                            }
+                        }
+                    }
+
+                }
+            }
+        }
+        .footer{
+            margin-top:100px;
         }
     }
 }
