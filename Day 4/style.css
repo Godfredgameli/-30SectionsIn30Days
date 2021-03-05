@@ -43,7 +43,7 @@ body .mainContainer .navbar .navbar-brand {
 }
 
 body .mainContainer .navbar .navbar-brand:hover, body .mainContainer .navbar .navbar-brand:focus {
-  transform: rotateY(180deg);
+  transform: rotateY(360deg);
   filter: invert(0.5);
 }
 
@@ -180,6 +180,9 @@ body .footer .footer__text a:hover, body .footer .footer__text a:focus {
   body .mainContainer .navbar {
     width: 98%;
   }
+  body .mainContainer .navbar .navbar-nav .last {
+    position: relative !important;
+  }
   body .mainContainer .legend .legend__text .introText {
     width: 55%;
   }
@@ -193,7 +196,7 @@ body .footer .footer__text a:hover, body .footer .footer__text a:focus {
     height: 600px !important;
   }
   body .mainContainer .navbar {
-    width: 100%;
+    width: 90%;
   }
   body .mainContainer .legend {
     padding: 0 4%;
