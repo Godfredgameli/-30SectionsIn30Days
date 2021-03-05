@@ -3,6 +3,7 @@
   margin: 0;
   padding: 0;
   box-sizing: border-box;
+  outline: 1px solid red;
 }
 
 /*Entire HTML body*/
@@ -25,12 +26,13 @@ body .mainContainer {
 }
 
 body .mainContainer .navbar {
-  margin: auto;
+  position: absolute;
+  padding: 0 8% !important;
+  margin-top: 10px;
   height: 70px;
-  width: 84%;
-  background-color: #fff;
-  padding: 0;
-  margin-bottom: 120px;
+  width: 100%;
+  background-color: transparent;
+  z-index: 2;
 }
 
 body .mainContainer .navbar .navbar-brand {
@@ -72,14 +74,22 @@ body .mainContainer .navbar .navbar-collapse .navbar-nav .nav-item .nav-link:hov
 }
 
 body .mainContainer .legend {
-  /*legend introduction text*/
   /*legend image section*/
+  height: 1000px;
+  background-image: url(images/background.png);
+  background-repeat: no-repeat;
+  background-position: left;
+  background-size: contain;
+  /*legend introduction text*/
+}
+
+body .mainContainer .legend .legend__image {
+  content: " ";
 }
 
 body .mainContainer .legend .legend__text {
   display: flex;
   align-items: center;
-  padding-left: 8%;
 }
 
 body .mainContainer .legend .legend__text .introText {
@@ -102,11 +112,12 @@ body .mainContainer .legend .legend__text .introText .introText__description {
 
 body .mainContainer .legend .legend__text .introText .introText__link a {
   color: white;
-  padding: 24px 100px;
-  background-color: #121212;
-  border-radius: 8px;
+  padding: 10px 0;
+  color: #000;
+  font-weight: 700;
   transition: all;
   transition-duration: 1s;
+  border-bottom: 2px solid #000;
 }
 
 body .mainContainer .legend .legend__text .introText .introText__link a:hover, body .mainContainer .legend .legend__text .introText .introText__link a:focus {
@@ -114,23 +125,11 @@ body .mainContainer .legend .legend__text .introText .introText__link a:hover, b
   filter: opacity(0.7);
 }
 
-body .mainContainer .legend .legend__image {
-  display: flex;
-  justify-content: flex-end;
-}
-
-body .mainContainer .legend .legend__image img {
-  max-width: 100%;
-  width: 100%;
-  height: auto;
-}
-
 body .footer {
   text-align: center;
   height: 50px;
   width: 100%;
   bottom: 0 !important;
-  margin-top: 50px;
   background-color: #121212;
   color: #fff;
   display: flex;

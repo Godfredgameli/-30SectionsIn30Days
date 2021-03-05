@@ -11,6 +11,7 @@ $bold: 700;
     margin: 0;
     padding: 0;
     box-sizing: border-box;
+    outline: 1px solid red;
 }
 /*Entire HTML body*/
 body{
@@ -26,13 +27,13 @@ body{
         height: 1000px !important;
         /*Navigation menu section*/
         .navbar{
-            margin: auto;
+            position: absolute;
+            padding: 0 8% !important;
+            margin-top: 10px;
             height: 70px;
-            width: 84%;
-            background-color: $background;
-            padding: 0;
-            margin-bottom: 120px;
-    
+            width: 100%;
+            background-color: transparent;
+            z-index: 2;
             .navbar-brand{
                 color: $secondary;
                 font-weight: $bold;
@@ -74,11 +75,19 @@ body{
         }
         /*legend section*/
         .legend{
+            /*legend image section*/
+            height: 1000px;
+            background-image: url(images/background.png);
+            background-repeat: no-repeat;
+            background-position: left;
+            background-size: contain;
+            .legend__image{
+               content: " ";
+            }
             /*legend introduction text*/
             .legend__text{
                 display: flex;
                 align-items: center;
-                padding-left: 8%;
                 .introText{
                     width: 65%;
                     .introText__heading{
@@ -96,11 +105,12 @@ body{
                     .introText__link{
                         a{
                             color: white;
-                            padding: 24px 100px;
-                            background-color: $secondary;
-                            border-radius: 8px;
+                            padding: 10px 0;
+                            color: $primary;
+                            font-weight: $bold;
                             transition: all;
                             transition-duration: 1s;
+                            border-bottom: 2px solid $primary;
 
                             &:hover, &:focus{
                                 text-decoration: none;
@@ -108,16 +118,6 @@ body{
                             }
                         }
                     }
-                }
-            }
-            /*legend image section*/
-            .legend__image{
-                display: flex;
-                justify-content: flex-end;
-                img{
-                    max-width: 100%;
-                    width: 100%;
-                    height: auto;
                 }
             }
         }
@@ -128,7 +128,6 @@ body{
         height: 50px;
         width: 100%;
         bottom: 0 !important;
-        margin-top: 50px;
         background-color: $secondary;
         color: $background;
         display: flex;
