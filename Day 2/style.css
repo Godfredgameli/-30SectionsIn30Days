@@ -250,6 +250,16 @@ body .footer .footer__text a:hover, body .footer .footer__text a:focus {
   body .mainContainer .legend .legend__text .introText {
     width: 80%;
   }
+  body .mainContainer .legend .legend__image .imagesWrapper .imagesWrapper__middle .leftLine {
+    transform: rotate(-55deg);
+    margin-top: 16%;
+    width: 28%;
+    margin-right: 48%;
+  }
+  body .mainContainer .legend .legend__image .imagesWrapper .imagesWrapper__middle .rightLine {
+    margin-top: 7.5%;
+    width: 21%;
+  }
 }
 
 @media screen and (max-width: 1350px) {

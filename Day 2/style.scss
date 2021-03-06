@@ -246,6 +246,23 @@ body{
                         width: 80%;
                     }
                 }
+                .legend__image{
+
+                    .imagesWrapper{
+                        .imagesWrapper__middle{
+                            .leftLine{
+                                transform: rotate(-55deg);
+                                margin-top: 16%;
+                                width: 28%;
+                                margin-right: 48%;
+                            }
+                            .rightLine{
+                                margin-top: 7.5%;
+                                width: 21%;
+                            }
+                        }   
+                    }
+                }
             }
         }
     }
