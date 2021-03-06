@@ -254,11 +254,12 @@ body .footer .footer__text a:hover, body .footer .footer__text a:focus {
     transform: rotate(-55deg);
     margin-top: 16%;
     width: 30%;
-    margin-right: 48%;
+    margin-right: 40%;
   }
   body .mainContainer .legend .legend__image .imagesWrapper .imagesWrapper__middle .rightLine {
     margin-top: 7.5%;
-    width: 22%;
+    width: 20%;
+    margin-left: 70%;
   }
 }
 
