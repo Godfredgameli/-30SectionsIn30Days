@@ -20,6 +20,7 @@ body {
 
 body .mainContainer {
   height: 900px !important;
+  overflow: hidden;
   /*Navigation menu section*/
   /*legend section*/
 }
@@ -71,6 +72,8 @@ body .mainContainer .navbar .navbar-collapse .navbar-nav .nav-item .nav-link:hov
 body .mainContainer .legend {
   width: 84%;
   margin: auto;
+  display: flex;
+  align-items: center;
   /*legend introduction text*/
   /*legend image section*/
 }

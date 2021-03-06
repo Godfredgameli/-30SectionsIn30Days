@@ -27,6 +27,7 @@ body{
     /*main container wrapper*/
     .mainContainer{
         height: 900px !important;
+        overflow: hidden;
         /*Navigation menu section*/
         .navbar{
             margin: auto;
@@ -75,6 +76,8 @@ body{
         .legend{
             width: 84%;
             margin: auto;
+            display: flex;
+            align-items: center;
             /*legend introduction text*/
             .legend__text{
                 display: flex;
