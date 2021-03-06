@@ -1,0 +1,287 @@
+@import url('https://fonts.googleapis.com/css2?family=Lato&display=swap');
+$primary: #111111;
+$secondary: #000000;
+$neutral: #333333;
+$white: #ffffff;
+$font: Lato;
+$size: 18px;
+$normal: 400;
+$bold: 800;
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+/*Entire HTML body*/
+body{
+    width: 100%;
+    background-color: $white;
+    font-family: $font;
+    font-size: $size;
+    color: $primary;
+    font-weight: $normal;
+    /*main container wrapper*/
+    .mainContainer{
+        height: 1000px !important;
+        overflow: hidden;
+        /*Navigation menu section*/
+        .navbar{
+            position: absolute;
+            padding: 0 8% !important;
+            margin-top: 10px;
+            height: 70px;
+            width: 100%;
+            background-color: transparent;
+            z-index: 2;
+            .navbar-brand{
+                color: $white;
+                font-weight: $bold;
+                font-size: 20px;
+                line-height: 24px;
+                transition: all;
+                transition-duration: 1s;
+
+                &:hover, &:focus{
+                    transform: scale(1.2);
+                    filter:invert(0.2);
+                    -webkit-text-stroke: 1px $secondary;
+                    -webkit-text-fill-color: transparent;
+                }
+            }
+    
+            .navbar-collapse{
+                justify-content: flex-end;
+                .navbar-nav{
+                    .nav-item{
+                        margin: 0 20px;
+                        .nav-link{
+                            color: $secondary;
+                            padding: 10px 0;
+                            font-weight: $bold;
+                            transition: all;
+                            transition-duration: 1s;
+    
+                            &:hover, &:active, &:focus{
+                                border-bottom: 2px solid $primary;
+                                filter: opacity(0.8);
+                            }
+                        }
+                    }
+                }
+            }
+            
+        }
+        /*legend section*/
+        .legend{
+            /*legend image section*/
+            height: 1000px;
+            background-image: url(images/background.png);
+            background-repeat: no-repeat;
+            background-position: left;
+            background-size: contain;
+            .legend__image{
+               content: " ";
+            }
+            /*legend introduction text*/
+            .legend__text{
+                display: flex;
+                align-items: center;
+                .introText{
+                    width: 60%;
+                    .introText__heading{
+                        color: $primary;
+                        font-size: 48px;
+                        line-height: 54px;
+                        margin-bottom: 200px;
+                        text-transform: capitalize;
+                        margin-left: -17vw;
+                        width: 100%;
+
+                        span{
+                            font-weight: $bold;
+                        }
+                    }
+                    hr{
+                        position: absolute;
+                        width: 10vw;
+                        height: 2px;
+                        background: $primary;
+                        margin-left: -17vw;
+                    }
+                    .introText__description{
+                        color: $neutral;
+                        margin-bottom: 60px;
+                        width: 70%;
+                    }
+                    .introText__link{
+                        a{
+                            padding: 10px 0;
+                            color: $primary;
+                            font-weight: $bold;
+                            transition: all;
+                            transition-duration: 1s;
+                            border-bottom: 2px solid $primary;
+
+                            &:hover, &:focus{
+                                text-decoration: none;
+                                filter: blur(1px);
+                            }
+                        }
+                    }
+                }
+                .sample{
+                    position: absolute;
+                    max-width: 100%;
+                    height: auto;
+                    align-self: flex-end;
+                    margin: 0 0 100px 50%;
+                }
+            }
+        }
+    }
+    /*footer section*/
+    .footer{
+        text-align: center;
+        height: 50px;
+        width: 100%;
+        bottom: 0 !important;
+        background-color: $secondary;
+        color: $white;
+        display: flex;
+        align-items: flex-end;
+        justify-content: center;
+        .footer__text{
+            a{
+                color: red;
+
+                &:hover, &:focus{
+                    text-decoration: none;
+                }
+            }
+        }
+    }
+}
+
+@media screen and (max-width: 1440px){
+    body{
+        .mainContainer{
+            .legend{
+                .legend__text{
+                    .introText{
+                        width: 80%;
+                    }
+                }
+            }
+        }
+    }
+}
+@media screen and (max-width: 1350px){
+    body{
+        .mainContainer{
+            .legend{
+                .legend__text{
+                    .introText{
+                        width: 90%;
+                    }
+                }
+            }
+        }
+    }
+}
+@media screen and (max-width: 1200px){
+    body{
+        .mainContainer{
+            .navbar{
+                width: 94%;
+            }
+            .legend{
+                .legend__text{
+                    padding-left: 3%;
+                    .introText{
+                        width: 100%;
+                    }
+                }
+            }
+        }
+    }
+}
+@media screen and (max-width: 1000px){
+    body{
+        .mainContainer{
+            .navbar{
+                width: 98%;
+            }
+            .legend{
+                .legend__text{
+                    padding-left: 1%;
+                    .introText{
+                        width: 100%;
+                        .introText__heading{
+                            font-size: 40px;
+                        }
+                    }
+                }
+            }
+        }
+    }
+}
+@media screen and (max-width: 767px){
+    body{
+        .mainContainer{
+            height: 900px !important;
+            .navbar{
+                padding: 0 0 0 20px !important;
+                .navbar-collapse{
+                    .navbar-nav{
+                        background-color: $neutral;
+                        .nav-item{
+                            .nav-link{
+                                color: $white;
+                            }
+                        }
+                    }
+                }
+            }
+            .legend{
+                background-size: 100% 100%;
+                background-blend-mode:color-dodge;
+                height: 900px;
+                padding: 0 4%;
+                flex-direction: column-reverse !important;
+                .legend__text{
+                    flex-direction: column;
+                    align-items: center;
+                    padding: 0;
+                    height: 700px !important;
+                    .introText{
+                        display: flex;
+                        justify-content: center;
+                        align-items: center;
+                        flex-direction: column;
+                        width: 100%;
+                        text-align: center;
+                        .introText__heading{
+                            font-size: 32px;
+                            margin-left: 0;
+                            margin-bottom: 100px;
+                        }
+                        hr{
+                            display: none;
+                        }
+                        .introText__description{
+                            color: $primary;
+                        }
+                    }
+                }
+                .sample{
+                    position: relative !important;
+                    margin: 200px 5% 0 0 !important;
+                    opacity: 0.7;
+                }
+                .legend__image{
+                    display: none;
+                }
+            }
+        }
+    }
+}
