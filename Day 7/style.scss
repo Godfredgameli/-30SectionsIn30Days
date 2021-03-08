@@ -10,7 +10,6 @@ $bold: 700;
     margin: 0;
     padding: 0;
     box-sizing: border-box;
-    outline: 1px solid red;
 }
 /*Entire HTML body*/
 body{
@@ -112,7 +111,7 @@ body{
                         margin-left: 20px;
                         button{
                             margin-right: 15px;
-                            padding: 10px 15px;
+                            padding: 8px 15px;
                             background-color: transparent;
                             color: $primary;
                             border-radius: 8px;
@@ -133,6 +132,7 @@ body{
                 justify-content: center;
                 align-items: flex-start;
                 text-align: right;
+                margin-top: 0;
                 img{
                     max-width: 100%;
                     height: auto;
@@ -186,7 +186,7 @@ body{
 @media screen and (max-width: 767px){
     body{
         .mainContainer{
-            height: 1200px !important;
+            height: 1250px !important;
             width: 95%;
             .navbar{
                 width: 100%;
@@ -207,7 +207,7 @@ body{
                 }
             }
             .legend{
-                margin-top: 100px !important;
+                margin-top: 150px !important;
                 justify-content: space-between;
                 height: 1000px;
                 width: 100%;
@@ -225,7 +225,13 @@ body{
                     .search{
                         width: 100%;
                     }
-                    
+                    .popular{
+                        span{
+                            button:last-of-type{
+                                display: none;
+                            }
+                        }
+                    }
                 }
                 .legend__image{
                     height: 700px !important;

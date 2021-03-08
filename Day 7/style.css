@@ -3,7 +3,6 @@
   margin: 0;
   padding: 0;
   box-sizing: border-box;
-  outline: 1px solid red;
 }
 
 /*Entire HTML body*/
@@ -119,7 +118,7 @@ body .mainContainer .legend .legend__text .popular span {
 
 body .mainContainer .legend .legend__text .popular span button {
   margin-right: 15px;
-  padding: 10px 15px;
+  padding: 8px 15px;
   background-color: transparent;
   color: #fff;
   border-radius: 8px;
@@ -137,6 +136,7 @@ body .mainContainer .legend .legend__image {
   justify-content: center;
   align-items: flex-start;
   text-align: right;
+  margin-top: 0;
 }
 
 body .mainContainer .legend .legend__image img {
@@ -177,7 +177,7 @@ body .footer .footer__text a:hover, body .footer .footer__text a:focus {
 
 @media screen and (max-width: 767px) {
   body .mainContainer {
-    height: 1200px !important;
+    height: 1250px !important;
     width: 95%;
   }
   body .mainContainer .navbar {
@@ -192,7 +192,7 @@ body .footer .footer__text a:hover, body .footer .footer__text a:focus {
     filter: opacity(0.7);
   }
   body .mainContainer .legend {
-    margin-top: 100px !important;
+    margin-top: 150px !important;
     justify-content: space-between;
     height: 1000px;
     width: 100%;
@@ -210,6 +210,9 @@ body .footer .footer__text a:hover, body .footer .footer__text a:focus {
   }
   body .mainContainer .legend .legend__text .search {
     width: 100%;
+  }
+  body .mainContainer .legend .legend__text .popular span button:last-of-type {
+    display: none;
   }
   body .mainContainer .legend .legend__image {
     height: 700px !important;
