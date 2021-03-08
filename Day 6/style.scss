@@ -3,8 +3,6 @@ $primary: #111;
 $secondary: #000;
 $neutral: #333333;
 $background: #eee;
-$button_bg: #D6D9CC;
-$line-color: #E7EADD;
 $font: Lato;
 $size: 16px;
 $normal: 400;
@@ -13,7 +11,7 @@ $bold: 700;
     margin: 0;
     padding: 0;
     box-sizing: border-box;
-    // outline: 1px solid red;
+    outline: 1px solid red;
 }
 /*Entire HTML body*/
 body{
@@ -28,13 +26,14 @@ body{
     .mainContainer{
         height: 900px !important;
         overflow: hidden;
+        padding: 0 8%;
         /*Navigation menu section*/
         .navbar{
             margin: auto;
             height: 70px;
-            width: 84%;
+            width: 100%;
+            padding: 0 8%;
             background-color: $background;
-            padding: 0;
             margin-bottom: 120px;
     
             .navbar-brand{
@@ -46,8 +45,10 @@ body{
                 transition-duration: 1s;
 
                 &:hover, &:focus{
-                    transform: scale(1.1);
-                    filter:invert(0.5);
+                    transform: scale(1.2);
+                    filter:invert(0.2);
+                    -webkit-text-stroke: 1px $secondary;
+                    -webkit-text-fill-color: transparent;
                 }
             }
     
@@ -74,60 +75,56 @@ body{
         }
         /*legend section*/
         .legend{
+            height: 700px;
             width: 84%;
             margin: auto;
             display: flex;
-            align-items: center;
-            /*legend introduction text*/
-            .legend__text{
+            align-items: stretch;
+
+            .legend__socials{
                 display: flex;
                 flex-direction: column;
-                justify-content: space-between;
-                .introText{
-                    width: 60%;
-                    .introText__heading{
-                        font-weight: $bold;
-                        color: black;
-                        font-size: 45px;
-                        line-height: 54px;
-                        margin-bottom: 30px;
-                        text-transform: capitalize;
+                justify-content: flex-end;
+                .socials__join{
+                    .icons{
+                        -webkit-text-stroke: 2px $primary;
+                        -webkit-text-fill-color: transparent;
+                        margin: 20px 0;
+                        font-size: 20px;
+                        i{
+                            margin-right: 20px;
+                        }
                     }
+                }
+            }
+            /*legend introduction text*/
+            .legend__text{
+                .introText{
+                    margin-top: 150px;
                     .introText__description{
                         color: $neutral;
                         margin-bottom: 40px;
+                        line-height: 20px;
+                        .bold{
+                            font-weight: bold;
+                            color: $primary;
+                            text-transform: capitalize;
+                            margin-bottom: 10px;
+                        }
                     }
                     .introText__link{
                         a{
                             color: $primary;
+                            font-weight: $bold;
+                            font-size: 18px;
                             padding: 8px 0;
-                            border-bottom: 1px solid $secondary;
+                            border-bottom: 2px solid $secondary;
                             transition: all;
                             transition-duration: 1s;
 
                             &:hover, &:focus{
                                 text-decoration: none;
-                                filter: opacity(0.7);
-                            }
-                        }
-                    }
-                }
-                .download{
-                    margin-bottom: -100px;
-                    .download__text{
-                        font-weight: $bold;
-                    }
-                    .download__CTA{
-                        .download__link{
-                            margin-right: 16px;
-                            padding: 10px 3%;
-                            color: black;
-                            background-color: $button_bg;
-                            border-radius: 4px;
-
-                            &:focus, &:hover{
-                                text-decoration: none;
-                                filter: invert(100%);
+                                filter: blur(1px);
                             }
                         }
                     }
@@ -137,78 +134,9 @@ body{
             .legend__image{
                 display: flex;
                 flex-direction: column;
-                background-image: url(images/Union.png);
-                background-repeat: no-repeat;
-                background-position: center;
-                background-size: 120% 140%;
-                .imagesWrapper{
-                    display: flex;
-                    flex-direction: column;
-
-                    .imagesWrapper__top{
-                        display: flex;
-                        align-items: center;
-                        .imagesWrapper__image{
-                            max-width: 30%;
-                            height: auto;
-                        }
-                        .topLeft{
-                            margin-top: 35px;
-                        }
-                        .topLine{
-                            width: 100%;
-                            height: 0px;
-                            content: " ";
-                            border: 1px solid $line-color;
-                            background-color: $line-color;
-                            transform: skewY(-5deg);
-                        }
-                    }
-                    .imagesWrapper__middle{
-                        display: flex;
-                        justify-content: center;
-                        img{
-                            max-width: 40%;
-                            height: auto;
-                        }
-                        .leftLine{
-                            transform: rotate(-40deg);
-                            border: 1px solid $line-color;
-                            margin-top: 15%;
-                            width: 28%;
-                            position: absolute;
-                            margin-right: 40%;
-                        }
-                        .rightLine{
-                            transform: rotate(90deg);
-                            border: 1px solid $line-color;
-                            margin-top: 5.5%;
-                            width: 16%;
-                            position: absolute;
-                            margin-left: 75%;
-                        }
-                    }
-                    .imagesWrapper__bottom{
-                        display: flex;
-                        align-items: center;
-                        .imagesWrapper__image{
-                            max-width: 30%;
-                            height: auto;
-                        }
-                        .bottomLeft{
-                            margin-top: 130px;
-                        }
-                        .bottomLine{
-                            width: 100%;
-                            height: 0px;
-                            margin-top: 40px;
-                            content: " ";
-                            border: 1px solid $line-color;
-                            background-color: $line-color;
-                            transform: skew(0deg, -10deg);
-                        }
-
-                    }
+                .imageWrapper{
+                    max-width: 100%;
+                    height: auto;
                 }
             }
         }
@@ -321,7 +249,6 @@ body{
                     .navbar-nav{
                         .nav-item{
                             .nav-link{
-                                background-color: $button_bg;
                                 transition: all;
                                 transition-duration: 1s;
         
