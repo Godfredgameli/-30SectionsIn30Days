@@ -1,0 +1,237 @@
+@import url('https://fonts.googleapis.com/css2?family=Lato&display=swap');
+$primary: #fff;
+$neutral: #f2f2f2;
+$background: #00401D,;
+$font: Lato;
+$size: 16px;
+$normal: 400;
+$bold: 700;
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    outline: 1px solid red;
+}
+/*Entire HTML body*/
+body{
+    width: 100%;
+    background-color: $background;
+    font-family: $font;
+    font-size: $size;
+    color: $primary;
+    font-weight: $normal;
+    overflow-x: hidden;
+    /*main container wrapper*/
+    .mainContainer{
+        height: 900px !important;
+        overflow: hidden;
+        /*Navigation menu section*/
+        .navbar{
+            margin: auto;
+            height: 100px;
+            width: 84%;
+            background-color: $background;
+            padding: 0;
+    
+            .navbar-brand{
+                color: $primary;
+                font-weight: $bold;
+                font-size: 28px;
+                line-height: 24px;
+                transition: all;
+                transition-duration: 1s;
+
+                &:hover, &:focus{
+                    transform: rotateY(360deg);
+                    filter:invert(0.1);
+                }
+            }
+    
+            .navbar-collapse{
+                justify-content: flex-end;
+                .navbar-nav{
+                    .nav-item{
+                        margin-left: 4vw;
+                        .nav-link{
+                            color: $primary;
+                            padding: 10px 0;
+                            font-weight: $bold;
+                            transition: all;
+                            transition-duration: 1s;
+    
+                            &:hover, &:active, &:focus{
+                                border-bottom: 1px solid $primary;
+                            }
+                        }
+                    }
+                }
+            }  
+        }
+        /*legend section*/
+        .legend{
+            width: 84%;
+            height: 700px;
+            margin: auto;
+            display: flex;
+            align-items: center;
+            /*legend introduction text*/
+            .legend__text{
+                display: flex;
+                flex-direction: column;
+                justify-content: space-between;
+                .introText{
+                    .introText__heading{
+                        font-weight: $bold;
+                        color: $primary;
+                        font-size: 45px;
+                        line-height: 54px;
+                        margin-bottom: 30px;
+                    }
+                    .introText__description{
+                        color: $neutral;
+                        margin-bottom: 40px;
+                    }
+                }
+                .search{
+                    width: 450px;
+                    .search__button{
+                        input{
+                            border-radius: 8px 0 0 8px;
+                        }
+                        button{
+                            background-color: #18A563;
+                            border-color: #18A563;
+                            color: $primary;
+                            border-radius: 0 8px 8px 0;
+                            cursor: pointer;
+                        }
+                    }
+                }
+                .popular{
+                    span{
+                        margin-left: 20px;
+                        button{
+                            margin-right: 15px;
+                            padding: 10px 15px;
+                            background-color: transparent;
+                            color: $primary;
+                            border-radius: 8px;
+                            border: 1px solid $primary;
+
+                            &:hover, &:focus, &:active{
+                                transform: translateY(-5px);
+                                border-color: #18A563;
+                                filter: drop-shadow(0 0 0.75rem crimson);
+                            }
+                        }
+                    }
+                }
+            }
+            /*legend image section*/
+            .legend__image{
+                display: flex;
+                justify-content: center;
+                align-items: flex-start;
+                text-align: right;
+                img{
+                    max-width: 100%;
+                    height: auto;
+                }
+                figcaption{
+                    margin-top: 10px;
+                    padding-right: 40px;
+                }
+            }
+        }
+    }
+    /*footer section*/
+    .footer{
+        text-align: center;
+        height: 50px;
+        width: 100%;
+        bottom: 0 !important;
+        background-color: black;
+        color: white;
+        display: flex;
+        align-items: flex-end;
+        justify-content: center;
+        .footer__text{
+            a{
+                color: red;
+
+                &:hover, &:focus{
+                    text-decoration: none;
+                }
+            }
+        }
+    }
+}
+
+
+@media screen and (max-width: 1000px){
+    body{
+        .mainContainer{
+            .legend{
+                .legend__text{
+                    .introText{
+                        .introText__heading{
+                            font-size: 40px;
+                        }
+                    }
+                }
+            }
+        }
+    }
+}
+@media screen and (max-width: 767px){
+    body{
+        .mainContainer{
+            height: 1200px !important;
+            width: 95%;
+            .navbar{
+                width: 100%;
+                .navbar-collapse{
+                    .navbar-nav{
+                        .nav-item{
+                            .nav-link{
+                                transition: all;
+                                transition-duration: 1s;
+        
+                                &:hover, &:active, &:focus{
+                                    border-bottom: 1px solid $primary;
+                                    filter: opacity(0.7);
+                                }
+                            }
+                        }
+                    }
+                }
+            }
+            .legend{
+                margin-top: 100px !important;
+                justify-content: space-between;
+                height: 1000px;
+                width: 100%;
+                .legend__text{
+                    padding: 0;
+                    height: 300px !important;
+
+                    .introText{
+                        width: 100%;
+                        text-align: center;
+                        .introText__heading{
+                            font-size: 32px;
+                        }
+                    }
+                    .search{
+                        width: 100%;
+                    }
+                    
+                }
+                .legend__image{
+                    height: 700px !important;
+                }
+            }
+        }
+    }
+}
+
