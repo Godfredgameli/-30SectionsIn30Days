@@ -109,6 +109,10 @@ body .mainContainer .legend .legend__socials .socials__join .icons .icons__link:
   filter: invert(0.2);
 }
 
+body .mainContainer .legend .legend__image {
+  padding: 0;
+}
+
 body .mainContainer .legend .legend__image img {
   max-width: 100%;
   height: auto;
@@ -186,7 +190,7 @@ body .footer .footer__text a:hover, body .footer .footer__text a:focus {
 
 @media screen and (max-width: 767px) {
   body .mainContainer {
-    height: 1350px !important;
+    height: 1250px !important;
     width: 100%;
   }
   body .mainContainer .navbar {
@@ -225,6 +229,12 @@ body .footer .footer__text a:hover, body .footer .footer__text a:focus {
     height: 250px;
     align-items: center;
     text-align: center;
+  }
+}
+
+@media screen and (max-width: 375px) {
+  body .mainContainer .legend .legend__image {
+    height: 300px !important;
   }
 }
 /*# sourceMappingURL=style.css.map */
