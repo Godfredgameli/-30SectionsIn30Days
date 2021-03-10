@@ -44,8 +44,8 @@ body .mainContainer .navbar .navbar-brand {
 }
 
 body .mainContainer .navbar .navbar-brand:hover, body .mainContainer .navbar .navbar-brand:focus {
-  transform: scale(1.1);
-  filter: invert(0.5);
+  transform: scale(1.2);
+  text-shadow: 2px 2px #000000;
 }
 
 body .mainContainer .navbar .navbar-collapse {
@@ -66,7 +66,7 @@ body .mainContainer .navbar .navbar-collapse .navbar-nav .nav-item .nav-link {
 
 body .mainContainer .navbar .navbar-collapse .navbar-nav .nav-item .nav-link:hover, body .mainContainer .navbar .navbar-collapse .navbar-nav .nav-item .nav-link:active, body .mainContainer .navbar .navbar-collapse .navbar-nav .nav-item .nav-link:focus {
   border-bottom: 1px solid #fff;
-  filter: opacity(0.7);
+  transform: translateY(-5px);
 }
 
 body .mainContainer .legend {
@@ -121,6 +121,17 @@ body .mainContainer .legend .legend__text .introText .payments .pay .pay__link:f
 body .mainContainer .legend .legend__image {
   display: flex;
   flex-direction: column;
+  animation-name: slide;
+  animation-duration: 1s;
+}
+
+@keyframes slide {
+  0% {
+    right: -50%;
+  }
+  100% {
+    right: 0;
+  }
 }
 
 body .mainContainer .CTA {
