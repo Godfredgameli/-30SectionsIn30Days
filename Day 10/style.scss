@@ -78,7 +78,9 @@ body{
             /*legend introduction text*/
             .legend__text{
                 height: 500px;
-                // background-image: url(images/box-pattern.png);
+                background-image: url(images/box-pattern.png);
+                background-repeat: no-repeat;
+                background-position: bottom left;
                 
                 .introText{
                     width: 60%;
@@ -126,6 +128,7 @@ body{
             .download{
                 .download__text{
                     font-weight: $bold;
+                    margin-bottom: 30px;
                 }
                 .download__CTA{
                     .download__link{

@@ -80,6 +80,9 @@ body .mainContainer .legend {
 
 body .mainContainer .legend .legend__text {
   height: 500px;
+  background-image: url(images/box-pattern.png);
+  background-repeat: no-repeat;
+  background-position: bottom left;
 }
 
 body .mainContainer .legend .legend__text .introText {
@@ -126,6 +129,7 @@ body .mainContainer .CTA {
 
 body .mainContainer .CTA .download .download__text {
   font-weight: 700;
+  margin-bottom: 30px;
 }
 
 body .mainContainer .CTA .download .download__CTA .download__link {
