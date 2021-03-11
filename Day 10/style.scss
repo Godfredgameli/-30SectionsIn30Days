@@ -77,12 +77,13 @@ body{
             /*legend introduction text*/
             .legend__text{
                 height: 500px;
+                padding-left: 2%;
                 background-image: url(images/box-pattern.png);
                 background-repeat: no-repeat;
                 background-position: bottom left;
                 
                 .introText{
-                    width: 60%;
+                    width: 70%;
                     .introText__heading{
                         color: $primary;
                         font-size: 40px;
@@ -132,6 +133,7 @@ body{
         .CTA{
             padding: 0;
             .download{
+                padding-left: 2%;
                 .download__text{
                     font-weight: $bold;
                     margin-bottom: 30px;
@@ -160,7 +162,7 @@ body{
         width: 100%;
         bottom: 0 !important;
         background-color: #111;
-        color: $background;
+        color: $primary;
         display: flex;
         align-items: flex-end;
         justify-content: center;
@@ -177,12 +179,27 @@ body{
 }
 
 
+@media screen and (max-width: 1200px){
+    body{
+        .mainContainer{
+            
+            .legend{
+                .legend__text{
+                    .introText{
+                        width: 90%;
+                    }
+                }
+            }
+        }
+    }
+}
 @media screen and (max-width: 767px){
     body{
         .mainContainer{
             height: 1400px !important;
             padding: 0 2.5%;
             .navbar{
+                margin-bottom: 150px;
                 .navbar-collapse{
                     .navbar-nav{
                         .nav-item{
