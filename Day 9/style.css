@@ -30,7 +30,7 @@ body .mainContainer {
 }
 
 body .mainContainer .navbar {
-  height: 100px;
+  height: 70px;
   background-color: transparent;
   padding: 0;
 }
@@ -143,22 +143,55 @@ body .footer .footer__text a:hover, body .footer .footer__text a:focus {
   text-decoration: none;
 }
 
+/*Responsiveness for screens*/
+@media screen and (max-width: 1600px) {
+  body .mainContainer .navbar .navbar-brand {
+    margin-left: 6%;
+  }
+}
+
+@media screen and (max-width: 1350px) {
+  body .mainContainer .navbar .navbar-brand {
+    margin-left: 2%;
+  }
+}
+
+@media screen and (max-width: 1200px) {
+  body .mainContainer {
+    padding: 0 3%;
+  }
+}
+
+@media screen and (max-width: 1000px) {
+  body .mainContainer {
+    padding: 0 1%;
+  }
+  body .mainContainer .navbar .navbar-nav .last {
+    position: relative !important;
+  }
+}
+
 @media screen and (max-width: 767px) {
   body .mainContainer {
     padding: 0 2%;
     height: 800px !important;
   }
   body .mainContainer .navbar {
-    margin-bottom: 150px;
+    margin-bottom: 200px;
   }
   body .mainContainer .navbar .navbar-brand {
     margin-left: 0 !important;
   }
-  body .mainContainer .navbar .navbar-nav {
+  body .mainContainer .navbar .navbar-collapse .navbar-nav {
     width: 100% !important;
+    background-color: #333;
   }
-  body .mainContainer .navbar .navbar-nav .last {
+  body .mainContainer .navbar .navbar-collapse .navbar-nav .last {
     position: relative !important;
+  }
+  body .mainContainer .navbar .navbar-collapse .navbar-nav .nav-item .nav-link:hover, body .mainContainer .navbar .navbar-collapse .navbar-nav .nav-item .nav-link:active, body .mainContainer .navbar .navbar-collapse .navbar-nav .nav-item .nav-link:focus {
+    border-bottom: 2px solid #fff;
+    transform: translateY(-5px);
   }
   body .mainContainer .legend {
     height: 550px;
