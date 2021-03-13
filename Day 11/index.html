@@ -6,7 +6,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <meta
       name="description"
-      content="Creators is a startup that helps content creators such as videographers, photographers, monetize their creative work."
+      content="Our service cover live sports activities for sports athletes and teams. We also provide links to live sports events for free."
     />
 
     <link rel="stylesheet" href="style.css" />
@@ -25,20 +25,23 @@
   </head>
   <body>
     <!-- Navigation menu section -->
-    <nav class="navbar navbar-expand-md navbar-dark">
+    <nav class="navbar navbar-expand-md navbar-light">
       <a class="navbar-brand" href="#Live">Live</a>
       <button
         class="navbar-toggler"
         type="button"
         data-toggle="collapse"
         data-target="#collapsibleNavbar"
+        aria-label="menu button"
       >
         <span class="navbar-toggler-icon"></span>
       </button>
       <div class="collapse navbar-collapse" id="collapsibleNavbar">
         <ul class="navbar-nav">
           <li class="nav-item">
-            <a class="nav-link" href="#Streamschedules">Live stream schedules</a>
+            <a class="nav-link" href="#Streamschedules"
+              >Live stream schedules</a
+            >
           </li>
           <li class="nav-item">
             <a class="nav-link" href="#Results">Results</a>
@@ -57,27 +60,49 @@
     </nav>
 
     <!-- main container wrapper -->
-    <div class="container-fluid mainContainer">
+    <div class="container-fluid mainContainer p-5">
       <!-- legend section   -->
       <div class="row legend">
         <!-- legend introduction text -->
         <div class="col-md-4 legend__text">
           <header class="introText">
-            <h1 class="introText__heading">
-              stream <span>live</span>
-            </h1>
+            <h1 class="introText__heading">stream <span>live</span></h1>
+            <p class="introText__description">
+              Our service cover live sports activities for sports athletes and
+              teams. We also provide links to live sports events for free.
+            </p>
             <p class="introText__link">
-              <a href="#Visit"
-                >Check out our collection
-                 <i class="fas fa-arrow-right    "></i></a>
+              <a href="#SignUp">Sign up now</a>
             </p>
           </header>
         </div>
         <!-- legend image section  -->
-        <div class="col-md-5 legend__image">
-        </div>
+        <div class="col-md-4 legend__image"></div>
         <!--Legend search section-->
-        <div class="col-md-3"></div>
+        <div class="col-md-4 legend__search">
+          <div class="search">
+            <form>
+              <div class="input-group mb-4 search__bar">
+                  <input type="text" class="form-control" placeholder="search..." required>
+                  <div class="input-group-append search__button">
+                    <button type="submit" aria-label="search button" class="input-group-text"><i class="fas fa-search "></i></button>
+                  </div>
+                </div>
+              </form>
+              <p class="search__results">
+                <a href="#NFL">NFL</a><br>
+                Fixtures, Scores, Results
+              </p>
+              <p class="search__results">
+                <a href="#BA">NBA</a><br>
+                Fixtures, Scores, Results
+              </p>
+              <p class="search__results">
+                <a href="#EPKL">English Premier League</a><br>
+                Fixtures, Scores, Results
+              </p>
+          </div>
+        </div>
       </div>
       <!-- footer section  -->
     </div>
