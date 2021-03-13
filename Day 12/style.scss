@@ -9,7 +9,7 @@ $bold: 800;
     margin: 0;
     padding: 0;
     box-sizing: border-box;
-    outline: 1px solid red;
+    // outline: 1px solid red;
 }
 /*Entire HTML body*/
 body{
@@ -22,81 +22,85 @@ body{
     overflow-x: hidden;
     /*main container wrapper*/
     .mainContainer{
-        height: 900px !important;
+        height: 1000px !important;
         overflow: hidden;
-        /*Navigation menu section*/
-        .navbar{
-            margin: auto;
-            height: 70px;
-            width: 84%;
-            background-color: $background;
-            padding: 0;
-            .navbar-brand{
-                color: $primary;
-                font-size: 24px;
-                line-height: 29px;
-                transition: all;
-                transition-duration: 1s;
-
-                &:hover, &:focus{
-                    transform: rotateY(360deg);
-                    filter:invert(0.5);
-                }
-            }
-    
-            .navbar-collapse{
-                justify-content: flex-end;
-                .navbar-nav{
-                    width: 70% !important;
-                    position: relative;
-                    .last{
-                        position: absolute;
-                        right: 0 !important;
-                    }
-                    .nav-item{
-                        margin: 0 10px;
-                        .nav-link{
-                            color: $primary;
-                            padding: 10px 0x;
-                            transition: all;
-                            transition-duration: 1s;
-    
-                            &:hover, &:active, &:focus{
-                                border-bottom: 2px solid $primary;
-                                filter: invert(0.4);
-                            }
-                        }
-                    }
-                }
-            }
-            
-        }
+        
         /*legend section*/
         .legend{
-            height: 700px;
-            margin: auto;
-            display: flex;
-            align-items: center;
+            height: 850px;
             /*legend introduction text*/
             .legend__text{
                 display: flex;
                 flex-direction: column;
-                justify-content: space-between;
+                /*Navigation menu section*/
+                .navbar{
+                    height: 70px;
+                    background-color: $background;
+                    padding: 0;
+                    .navbar-brand{
+                        color: $primary;
+                        font-size: 24px;
+                        line-height: 29px;
+                        transition: all;
+                        transition-duration: 1s;
+        
+                        &:hover, &:focus{
+                            transform: rotateY(360deg);
+                            filter:invert(0.5);
+                        }
+                    }
+            
+                    .navbar-collapse{
+                        justify-content: flex-end;
+                        .navbar-nav{
+                            width: 90% !important;
+                            position: relative;
+                            .last{
+                                position: absolute;
+                                right: 0 !important;
+                            }
+                            .nav-item{
+                                margin: 0 10px;
+                                .nav-link{
+                                    color: $primary;
+                                    padding: 10px 0x;
+                                    transition: all;
+                                    transition-duration: 1s;
+            
+                                    &:hover, &:active, &:focus{
+                                        border-bottom: 2px solid $primary;
+                                        filter: invert(0.4);
+                                    }
+                                }
+                            }
+                        }
+                    }
+                    
+                }
                 .introText{
+                    margin-left: 5vw;
+                    margin-top: 130px;
                     .introText__heading{
                         font-weight: $bold;
                         color: $primary;
                         font-size: 64px;
                         line-height: 77px;
                         margin-bottom: 30px;
+                        width: 50%;
                     }
                     .introText__description{
-                        color: $primary;
-                        margin-bottom: 40px;
+                        margin-bottom: 55px;
+                        font-size: 72px;
+                        line-height: 86px;
+                        letter-spacing: 5px;
+                        font-weight: $bold;
+                        -webkit-text-stroke: 1px $primary;
+                        -webkit-text-fill-color: transparent;
                     }
                 }
                 .search{
                     width: 450px;
+                    margin-left: 5vw;
                     .search__button{
                         input{
                             border-radius: 8px 0 0 8px;
@@ -110,21 +114,21 @@ body{
                         }
                     }
                 }
-                .popular{
-                    span{
-                        margin-left: 20px;
-                        button{
-                            margin-right: 15px;
-                            padding: 8px 15px;
-                            background-color: transparent;
-                            color: $primary;
-                            border-radius: 8px;
+                .download{
+                    margin-left: 5vw;
+                    margin-top: 120px;
+                    .download__CTA{
+                        .download__link{
+                            margin-right: 16px;
+                            padding: 10px 3%;
+                            color: black;
+                            background-color: $background;
+                            border-radius: 4px;
                             border: 1px solid $primary;
 
-                            &:hover, &:focus, &:active{
-                                transform: translateY(-5px);
-                                border-color: #18A563;
-                                filter: drop-shadow(0 0 0.75rem crimson);
+                            &:focus, &:hover{
+                                text-decoration: none;
+                                filter: invert(100%);
                             }
                         }
                     }
@@ -133,7 +137,7 @@ body{
             /*legend image section*/
             .legend__image{
                 content: " ";
-                height: 700px;
+                height: 850px;
                 background-image: url(images/garage.png);
                 background-repeat: no-repeat;
                 background-size: 100% 100%;
@@ -169,6 +173,13 @@ body{
         .mainContainer{
             .legend{
                 .legend__text{
+                    .navbar{
+                        .navbar-collapse{
+                            .navbar-nav{
+                                width: 100%;
+                            }
+                        }
+                    }
                     .introText{
                         .introText__heading{
                             font-size: 40px;
