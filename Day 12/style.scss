@@ -9,7 +9,7 @@ $bold: 800;
     margin: 0;
     padding: 0;
     box-sizing: border-box;
-    // outline: 1px solid red;
+    outline: 1px solid red;
 }
 /*Entire HTML body*/
 body{
@@ -36,7 +36,6 @@ body{
                 .navbar{
                     height: 70px;
                     background-color: $background;
-                    padding: 0;
                     .navbar-brand{
                         color: $primary;
                         font-size: 24px;
@@ -53,7 +52,7 @@ body{
                     .navbar-collapse{
                         justify-content: flex-end;
                         .navbar-nav{
-                            width: 90% !important;
+                            width: 100% !important;
                             position: relative;
                             .last{
                                 position: absolute;
@@ -168,22 +167,75 @@ body{
 }
 
 
-@media screen and (max-width: 1000px){
+@media screen and (max-width: 1440px){
     body{
         .mainContainer{
+            padding: 20px !important;
             .legend{
                 .legend__text{
                     .navbar{
+                        padding: 0 !important;
+                    }
+                    .introText{
+                        .introText__heading{
+                            font-size: 60px;
+                        }
+                        .introText__description{
+                            font-size: 65px;
+                        }
+                    }
+                }
+            }
+        }
+    }
+}
+@media screen and (max-width: 991px){
+    body{
+        .mainContainer{
+            padding: 20px !important;
+            .legend{
+                .legend__text{
+                    .navbar{
+                        margin-bottom: 0 0 150px 0;
+                        padding: 0 !important;
+                        background-color: #333;
+                        .navbar-brand{
+                            color: white;
+                        }
                         .navbar-collapse{
                             .navbar-nav{
-                                width: 100%;
+                                background-color: #333;
+                                .nav-item{
+                                    .nav-link{
+                                        color: $background;
+                
+                                        &:hover, &:active, &:focus{
+                                            border-bottom: 1px solid $background;
+                                        }
+                                    }
+                                }
+                                .last{
+                                    position: relative !important;
+                                }
+                               
                             }
+        
                         }
                     }
                     .introText{
                         .introText__heading{
                             font-size: 40px;
                         }
+                        .introText__description{
+                            font-size: 45px;
+                            -webkit-text-stroke: 0.5px $primary;
+                        }
+                    }
+                    .search{
+                        width: 90%;
+                    }
+                    .download{
+                        margin-top: 80px;
                     }
                 }
             }
@@ -193,55 +245,68 @@ body{
 @media screen and (max-width: 767px){
     body{
         .mainContainer{
-            height: 1250px !important;
-            width: 95%;
-            .navbar{
-                width: 100%;
-                .navbar-collapse{
-                    .navbar-nav{
-                        .nav-item{
-                            .nav-link{
-                                transition: all;
-                                transition-duration: 1s;
-        
-                                &:hover, &:active, &:focus{
-                                    border-bottom: 1px solid $primary;
-                                    filter: opacity(0.7);
-                                }
-                            }
-                        }
-                    }
-                }
-            }
+            height: 900px !important;
+            overflow: hidden;
+            background-image: linear-gradient(rgba(0,0,0, 0.3),rgba(0,0,0, 0.3)), url(images/garage.png);
+            background-size: 100% 100%;
             .legend{
-                margin-top: 150px !important;
-                justify-content: space-between;
-                height: 1000px;
+                height: 900px;
                 width: 100%;
+                padding: 10px;
                 .legend__text{
                     padding: 0;
-                    height: 300px !important;
 
+                    .navbar{
+                        background-color: transparent;
+                        margin-bottom: 150px;
+                        .navbar-brand{
+                            color: white;
+                        }
+                        .navbar-collapse{
+                            .navbar-nav{
+                                background-color: #333;
+                                .nav-item{
+                                    .nav-link{
+                                        color: $background;
+                
+                                        &:hover, &:active, &:focus{
+                                            border-bottom: 1px solid $background;
+                                        }
+                                    }
+                                }
+                                .last{
+                                    position: relative !important;
+                                }
+                               
+                            }
+        
+                        }
+                    }
                     .introText{
                         width: 100%;
                         text-align: center;
+                        margin-top: 0;
+                        color: white;
                         .introText__heading{
-                            font-size: 32px;
+                            font-size: 40px;
+                            width: 100%;
+                            color: white;
+                        }
+                        .introText__description{
+                            font-size: 50px;
+                            -webkit-text-fill-color: white;
+                            -webkit-text-stroke: 1px white;
                         }
                     }
                     .search{
-                        width: 100%;
+                        width: 90%;
                     }
-                    .popular{
-                        span{
-                            button:last-of-type{
-                                display: none;
-                            }
-                        }
+                    .download{
+                        color: white;
                     }
                 }
                 .legend__image{
-                    height: 700px !important;
+                    display: none;
                 }
             }
         }

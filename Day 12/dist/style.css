@@ -18,30 +18,25 @@ body {
   /*main container wrapper*/
   /*footer section*/
 }
-
 body .mainContainer {
   height: 1000px !important;
   overflow: hidden;
   /*legend section*/
 }
-
 body .mainContainer .legend {
   height: 850px;
   /*legend introduction text*/
   /*legend image section*/
 }
-
 body .mainContainer .legend .legend__text {
   display: flex;
   flex-direction: column;
   /*Navigation menu section*/
 }
-
 body .mainContainer .legend .legend__text .navbar {
   height: 70px;
   background-color: #fff;
 }
-
 body .mainContainer .legend .legend__text .navbar .navbar-brand {
   color: #111;
   font-size: 24px;
@@ -49,47 +44,38 @@ body .mainContainer .legend .legend__text .navbar .navbar-brand {
   transition: all;
   transition-duration: 1s;
 }
-
 body .mainContainer .legend .legend__text .navbar .navbar-brand:hover, body .mainContainer .legend .legend__text .navbar .navbar-brand:focus {
   transform: rotateY(360deg);
   filter: invert(0.5);
 }
-
 body .mainContainer .legend .legend__text .navbar .navbar-collapse {
   justify-content: flex-end;
 }
-
 body .mainContainer .legend .legend__text .navbar .navbar-collapse .navbar-nav {
   width: 100% !important;
   position: relative;
 }
-
 body .mainContainer .legend .legend__text .navbar .navbar-collapse .navbar-nav .last {
   position: absolute;
   right: 0 !important;
 }
-
 body .mainContainer .legend .legend__text .navbar .navbar-collapse .navbar-nav .nav-item {
   margin: 0 10px;
 }
-
 body .mainContainer .legend .legend__text .navbar .navbar-collapse .navbar-nav .nav-item .nav-link {
   color: #111;
   padding: 10px 0x;
   transition: all;
   transition-duration: 1s;
 }
-
 body .mainContainer .legend .legend__text .navbar .navbar-collapse .navbar-nav .nav-item .nav-link:hover, body .mainContainer .legend .legend__text .navbar .navbar-collapse .navbar-nav .nav-item .nav-link:active, body .mainContainer .legend .legend__text .navbar .navbar-collapse .navbar-nav .nav-item .nav-link:focus {
   border-bottom: 2px solid #111;
   filter: invert(0.4);
 }
-
 body .mainContainer .legend .legend__text .introText {
   margin-left: 5vw;
   margin-top: 130px;
 }
-
 body .mainContainer .legend .legend__text .introText .introText__heading {
   font-weight: 800;
   color: #111;
@@ -98,7 +84,6 @@ body .mainContainer .legend .legend__text .introText .introText__heading {
   margin-bottom: 30px;
   width: 50%;
 }
-
 body .mainContainer .legend .legend__text .introText .introText__description {
   margin-bottom: 55px;
   font-size: 72px;
@@ -108,16 +93,13 @@ body .mainContainer .legend .legend__text .introText .introText__description {
   -webkit-text-stroke: 1px #111;
   -webkit-text-fill-color: transparent;
 }
-
 body .mainContainer .legend .legend__text .search {
   width: 450px;
   margin-left: 5vw;
 }
-
 body .mainContainer .legend .legend__text .search .search__button input {
   border-radius: 8px 0 0 8px;
 }
-
 body .mainContainer .legend .legend__text .search .search__button button {
   background-color: #111;
   border-color: #111;
@@ -125,12 +107,10 @@ body .mainContainer .legend .legend__text .search .search__button button {
   border-radius: 0 8px 8px 0;
   cursor: pointer;
 }
-
 body .mainContainer .legend .legend__text .download {
   margin-left: 5vw;
   margin-top: 120px;
 }
-
 body .mainContainer .legend .legend__text .download .download__CTA .download__link {
   margin-right: 16px;
   padding: 10px 3%;
@@ -139,12 +119,10 @@ body .mainContainer .legend .legend__text .download .download__CTA .download__li
   border-radius: 4px;
   border: 1px solid #111;
 }
-
 body .mainContainer .legend .legend__text .download .download__CTA .download__link:focus, body .mainContainer .legend .legend__text .download .download__CTA .download__link:hover {
   text-decoration: none;
   filter: invert(100%);
 }
-
 body .mainContainer .legend .legend__image {
   content: " ";
   height: 850px;
@@ -152,7 +130,6 @@ body .mainContainer .legend .legend__image {
   background-repeat: no-repeat;
   background-size: 100% 100%;
 }
-
 body .footer {
   text-align: center;
   height: 50px;
@@ -164,11 +141,9 @@ body .footer {
   align-items: flex-end;
   justify-content: center;
 }
-
 body .footer .footer__text a {
   color: red;
 }
-
 body .footer .footer__text a:hover, body .footer .footer__text a:focus {
   text-decoration: none;
 }
@@ -181,13 +156,9 @@ body .footer .footer__text a:hover, body .footer .footer__text a:focus {
     padding: 0 !important;
   }
   body .mainContainer .legend .legend__text .introText .introText__heading {
-    font-size: 60px;
-  }
-  body .mainContainer .legend .legend__text .introText .introText__description {
-    font-size: 65px;
+    font-size: 40px;
   }
 }
-
 @media screen and (max-width: 991px) {
   body .mainContainer {
     padding: 20px !important;
@@ -213,20 +184,13 @@ body .footer .footer__text a:hover, body .footer .footer__text a:focus {
     position: relative !important;
   }
   body .mainContainer .legend .legend__text .introText .introText__heading {
-    font-size: 40px;
-  }
-  body .mainContainer .legend .legend__text .introText .introText__description {
-    font-size: 45px;
-    -webkit-text-stroke: 0.5px #111;
+    font-size: 50px;
+    width: 80%;
   }
   body .mainContainer .legend .legend__text .search {
     width: 90%;
   }
-  body .mainContainer .legend .legend__text .download {
-    margin-top: 80px;
-  }
 }
-
 @media screen and (max-width: 767px) {
   body .mainContainer {
     height: 900px !important;
@@ -287,4 +251,3 @@ body .footer .footer__text a:hover, body .footer .footer__text a:focus {
     display: none;
   }
 }
-/*# sourceMappingURL=style.css.map */
