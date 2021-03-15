@@ -3,7 +3,6 @@
   margin: 0;
   padding: 0;
   box-sizing: border-box;
-  outline: 1px solid red;
 }
 
 /*Entire HTML body*/
@@ -185,6 +184,22 @@ body .footer .footer__text a:hover, body .footer .footer__text a:focus {
   }
   body .mainContainer .legend .legend__text .introText .introText__description {
     font-size: 65px;
+  }
+}
+
+@media screen and (max-width: 1350px) {
+  body .mainContainer {
+    padding: 20px !important;
+  }
+  body .mainContainer .legend .legend__text .navbar {
+    padding: 0 !important;
+  }
+  body .mainContainer .legend .legend__text .introText .introText__heading {
+    font-size: 50px;
+    width: 70%;
+  }
+  body .mainContainer .legend .legend__text .introText .introText__description {
+    font-size: 55px;
   }
 }
 
