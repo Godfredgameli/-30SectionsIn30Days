@@ -10,7 +10,6 @@ $bold: 800;
     margin: 0;
     padding: 0;
     box-sizing: border-box;
-    // outline: 1px solid red;
 }
 /*Entire HTML body*/
 body{
@@ -82,7 +81,7 @@ body{
         /*legend section*/
         .legend{
             color: $primary;
-            width: 37%;
+            width: 635px;
             margin: 0 auto;
             /*legend introduction text*/
             .legend__text{
@@ -143,44 +142,13 @@ body{
 
 
 /*Responsiveness for screens*/
-@media screen and (max-width: 1600px){
-    body{
-        .mainContainer{
-            .navbar{
-                .navbar-brand{
-                margin-left: 6%;
-                }
-            }
-        }
-    }
-}
-@media screen and (max-width: 1350px){
-    body{
-        .mainContainer{
-            .navbar{
-                .navbar-brand{
-                margin-left: 2%;
-                }
-            }
-        }
-    }
-}
-@media screen and (max-width: 1200px){
-    body{
-        .mainContainer{
-            padding: 0 3%;
-        }
-    }
-}
+
 @media screen and (max-width: 1000px){
     body{
         .mainContainer{
-            padding: 0 1%;
             .navbar{
-                .navbar-nav{
-                    .last{
-                        position: relative !important;
-                    }
+                .navbar-brand{
+                    margin-left: 50%;
                 }
             }
         }
@@ -189,12 +157,13 @@ body{
 @media screen and (max-width: 767px){
     body{
         .mainContainer{
-            padding: 0 2%;
+            padding: 2%;
             height: 800px !important;
             .navbar{
                 margin-bottom: 200px;
                 .navbar-brand{
                     margin-left: 0 !important;
+                    position: relative;
                 }
                 .navbar-collapse{
                     .navbar-nav{
@@ -216,15 +185,76 @@ body{
                 }
             }
             .legend{
-                height: 550px;
+                width: 590px;
                 .legend__text{
                     padding: 0;
-                    height: 400px !important;
                     .introText{
                         width: 100%;
-                        text-align: center;
+                        .introText__link{
+                            text-align: center;
+                        }
                         .introText__heading{
-                            font-size: 32px;
+                            font-size: 70px;
+                        }
+                    }
+                }
+            }
+        }
+    }
+}
+@media screen and (max-width: 619px){
+    body{
+        .mainContainer{
+            .legend{
+                width: 465px;
+                .legend__text{
+                    padding: 0;
+                    .introText{
+                        .introText__link{
+                            text-align: center;
+                        }
+                        .introText__heading{
+                            font-size: 55px;
+                        }
+                    }
+                }
+            }
+        }
+    }
+}
+@media screen and (max-width: 494px){
+    body{
+        .mainContainer{
+            .legend{
+                width: 365px;
+                .legend__text{
+                    padding: 0;
+                    .introText{
+                        .introText__link{
+                            text-align: center;
+                        }
+                        .introText__heading{
+                            font-size: 43px;
+                        }
+                    }
+                }
+            }
+        }
+    }
+}
+@media screen and (max-width: 380px){
+    body{
+        .mainContainer{
+            .legend{
+                width: 100%;
+                .legend__text{
+                    padding: 0;
+                    .introText{
+                        .introText__link{
+                            text-align: center;
+                        }
+                        .introText__heading{
+                            font-size: 35px;
                         }
                     }
                 }

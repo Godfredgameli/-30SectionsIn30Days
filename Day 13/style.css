@@ -84,7 +84,7 @@ body .mainContainer .navbar .navbar-collapse .navbar-nav .nav-item .nav-link:hov
 
 body .mainContainer .legend {
   color: #fff;
-  width: 37%;
+  width: 635px;
   margin: 0 auto;
   /*legend introduction text*/
 }
@@ -140,36 +140,15 @@ body .footer .footer__text a:hover, body .footer .footer__text a:focus {
 }
 
 /*Responsiveness for screens*/
-@media screen and (max-width: 1600px) {
-  body .mainContainer .navbar .navbar-brand {
-    margin-left: 6%;
-  }
-}
-
-@media screen and (max-width: 1350px) {
-  body .mainContainer .navbar .navbar-brand {
-    margin-left: 2%;
-  }
-}
-
-@media screen and (max-width: 1200px) {
-  body .mainContainer {
-    padding: 0 3%;
-  }
-}
-
 @media screen and (max-width: 1000px) {
-  body .mainContainer {
-    padding: 0 1%;
-  }
-  body .mainContainer .navbar .navbar-nav .last {
-    position: relative !important;
+  body .mainContainer .navbar .navbar-brand {
+    margin-left: 50%;
   }
 }
 
 @media screen and (max-width: 767px) {
   body .mainContainer {
-    padding: 0 2%;
+    padding: 2%;
     height: 800px !important;
   }
   body .mainContainer .navbar {
@@ -177,6 +156,7 @@ body .footer .footer__text a:hover, body .footer .footer__text a:focus {
   }
   body .mainContainer .navbar .navbar-brand {
     margin-left: 0 !important;
+    position: relative;
   }
   body .mainContainer .navbar .navbar-collapse .navbar-nav {
     width: 100% !important;
@@ -190,18 +170,64 @@ body .footer .footer__text a:hover, body .footer .footer__text a:focus {
     transform: translateY(-5px);
   }
   body .mainContainer .legend {
-    height: 550px;
+    width: 590px;
   }
   body .mainContainer .legend .legend__text {
     padding: 0;
-    height: 400px !important;
   }
   body .mainContainer .legend .legend__text .introText {
     width: 100%;
+  }
+  body .mainContainer .legend .legend__text .introText .introText__link {
     text-align: center;
   }
   body .mainContainer .legend .legend__text .introText .introText__heading {
-    font-size: 32px;
+    font-size: 70px;
+  }
+}
+
+@media screen and (max-width: 619px) {
+  body .mainContainer .legend {
+    width: 465px;
+  }
+  body .mainContainer .legend .legend__text {
+    padding: 0;
+  }
+  body .mainContainer .legend .legend__text .introText .introText__link {
+    text-align: center;
+  }
+  body .mainContainer .legend .legend__text .introText .introText__heading {
+    font-size: 55px;
+  }
+}
+
+@media screen and (max-width: 494px) {
+  body .mainContainer .legend {
+    width: 365px;
+  }
+  body .mainContainer .legend .legend__text {
+    padding: 0;
+  }
+  body .mainContainer .legend .legend__text .introText .introText__link {
+    text-align: center;
+  }
+  body .mainContainer .legend .legend__text .introText .introText__heading {
+    font-size: 43px;
+  }
+}
+
+@media screen and (max-width: 380px) {
+  body .mainContainer .legend {
+    width: 100%;
+  }
+  body .mainContainer .legend .legend__text {
+    padding: 0;
+  }
+  body .mainContainer .legend .legend__text .introText .introText__link {
+    text-align: center;
+  }
+  body .mainContainer .legend .legend__text .introText .introText__heading {
+    font-size: 35px;
   }
 }
 /*# sourceMappingURL=style.css.map */
