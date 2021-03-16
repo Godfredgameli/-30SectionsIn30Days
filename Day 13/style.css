@@ -3,7 +3,6 @@
   margin: 0;
   padding: 0;
   box-sizing: border-box;
-  outline: 1px solid red;
 }
 
 /*Entire HTML body*/
@@ -13,7 +12,7 @@ body {
   font-family: Lato;
   font-size: 16px;
   color: #fff;
-  font-weight: 400;
+  font-weight: 500;
   overflow-x: hidden;
   /*main container wrapper*/
   /*footer section*/
@@ -29,10 +28,10 @@ body .mainContainer {
 }
 
 body .mainContainer .navbar {
-  height: 70px;
+  height: 100px;
   background-color: transparent;
   padding: 0;
-  margin-bottom: 130px;
+  margin-bottom: 210px;
 }
 
 body .mainContainer .navbar .navbar-brand {
@@ -40,8 +39,10 @@ body .mainContainer .navbar .navbar-brand {
   font-weight: 800;
   font-size: 24px;
   line-height: 29px;
-  transition: all;
+  transition: all !important;
   transition-duration: 1s;
+  position: absolute;
+  margin-left: 45%;
 }
 
 body .mainContainer .navbar .navbar-brand:hover, body .mainContainer .navbar .navbar-brand:focus {
@@ -55,7 +56,7 @@ body .mainContainer .navbar .navbar-collapse {
 }
 
 body .mainContainer .navbar .navbar-collapse .navbar-nav {
-  width: 70% !important;
+  width: 100% !important;
   position: relative;
 }
 
@@ -82,30 +83,29 @@ body .mainContainer .navbar .navbar-collapse .navbar-nav .nav-item .nav-link:hov
 }
 
 body .mainContainer .legend {
-  height: 770px;
   color: #fff;
-  width: 50%;
+  width: 37%;
   margin: 0 auto;
   /*legend introduction text*/
-}
-
-body .mainContainer .legend .legend__text .introText {
-  text-align: center;
 }
 
 body .mainContainer .legend .legend__text .introText .introText__heading {
   font-size: 72px;
   line-height: 87px;
-  margin-bottom: 90px;
+  margin-bottom: 200px;
   font-weight: 800;
 }
 
 body .mainContainer .legend .legend__text .introText .introText__heading span {
-  opacity: 0.8;
-  font-weight: 400;
+  float: right;
+}
+
+body .mainContainer .legend .legend__text .introText .introText__link {
+  text-align: center;
 }
 
 body .mainContainer .legend .legend__text .introText .introText__link a {
+  font-size: 18px;
   color: #fff;
   font-weight: 800;
   padding: 10px 0;
