@@ -25,12 +25,15 @@ body{
     .mainContainer{
         height: 900px !important;
         overflow: hidden;
+        background-image: url(images/Vector.png);
+        background-repeat: no-repeat;
+        background-size:60% 100%;
+        background-position: right;
         /*Navigation menu section*/
         .navbar{
             margin: auto;
             height: 70px;
             width: 84%;
-            background-color: $background;
             padding: 0;
             margin-bottom: 120px;
     
@@ -130,13 +133,9 @@ body{
                 }
             }
             /*legend image section*/
-            .legend__image{
-                background-image: url(images/Writing.png);
-                background-repeat: no-repeat;
-                background-size: 100% 100%;
-                content: " ";
+            // .legend__image{
                 
-            }
+            // }
         }
     }
     /*footer section*/
