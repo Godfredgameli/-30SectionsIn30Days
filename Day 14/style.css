@@ -195,7 +195,7 @@ body .footer .footer__text a:hover, body .footer .footer__text a:focus {
     background-color: #C4BBA5;
   }
   body .mainContainer {
-    height: 1050px !important;
+    height: 750px !important;
     width: 100%;
     background: transparent;
     padding-top: 20px;
@@ -237,6 +237,9 @@ body .footer .footer__text a:hover, body .footer .footer__text a:focus {
   body .mainContainer .legend .legend__text .download .download__CTA .download__link {
     margin-right: 10px;
     padding: 10px 2% !important;
+  }
+  body .mainContainer .legend .legend__image {
+    display: none;
   }
 }
 /*# sourceMappingURL=style.css.map */

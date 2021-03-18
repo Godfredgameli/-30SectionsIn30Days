@@ -226,7 +226,7 @@ body{
     body{
         background-color: #C4BBA5;
         .mainContainer{
-            height: 1050px !important;
+            height: 750px !important;
             width: 100%;
             background: transparent;
             padding-top: 20px;
@@ -273,6 +273,9 @@ body{
                             }
                         }
                     }
+                }
+                .legend__image{
+                    display: none;
                 }
             }
         }
