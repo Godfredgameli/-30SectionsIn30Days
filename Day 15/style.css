@@ -8,12 +8,11 @@
 /*Entire HTML body*/
 body {
   width: 100%;
-  background-color: #FFF1D0;
+  background-color: #CCD4BF;
   font-family: Lato;
   font-size: 16px;
-  color: #3D2B00;
+  color: #466612;
   font-weight: 500;
-  overflow-x: hidden;
   /*main container wrapper*/
   /*footer section*/
 }
@@ -23,22 +22,23 @@ body .mainContainer {
   overflow: hidden;
   background-image: url(images/Vector.png);
   background-repeat: no-repeat;
-  background-size: 60% 100%;
-  background-position: right;
+  background-size: contain;
+  background-position: bottom;
+  overflow: hidden;
+  padding: 0 3%;
   /*Navigation menu section*/
   /*legend section*/
 }
 
 body .mainContainer .navbar {
   margin: auto;
-  height: 70px;
-  width: 84%;
+  height: 100px;
   padding: 0;
-  margin-bottom: 120px;
+  margin-bottom: 70px;
 }
 
 body .mainContainer .navbar .navbar-brand {
-  color: #3D2B00;
+  color: #466612;
   font-weight: 800;
   font-size: 20px;
   line-height: 24px;
@@ -47,9 +47,9 @@ body .mainContainer .navbar .navbar-brand {
 }
 
 body .mainContainer .navbar .navbar-brand:hover, body .mainContainer .navbar .navbar-brand:focus {
-  transform: scale(1.2);
-  -webkit-text-stroke: 1px #3D2B00;
-  -webkit-text-stroke-color: transparent;
+  transform: rotateY(180deg);
+  -webkit-text-stroke: 1px #466612;
+  -webkit-text-fill-color: transparent;
 }
 
 body .mainContainer .navbar .navbar-collapse {
@@ -61,7 +61,7 @@ body .mainContainer .navbar .navbar-collapse .navbar-nav .nav-item {
 }
 
 body .mainContainer .navbar .navbar-collapse .navbar-nav .nav-item .nav-link {
-  color: #3D2B00;
+  color: #466612;
   padding: 10px 0;
   font-weight: 800;
   transition: all;
@@ -69,12 +69,11 @@ body .mainContainer .navbar .navbar-collapse .navbar-nav .nav-item .nav-link {
 }
 
 body .mainContainer .navbar .navbar-collapse .navbar-nav .nav-item .nav-link:hover, body .mainContainer .navbar .navbar-collapse .navbar-nav .nav-item .nav-link:active, body .mainContainer .navbar .navbar-collapse .navbar-nav .nav-item .nav-link:focus {
-  border-bottom: 2px solid #3D2B00;
+  border-bottom: 2px solid #466612;
   filter: opacity(0.7);
 }
 
 body .mainContainer .legend {
-  width: 84%;
   margin: auto;
   height: 700px;
   /*legend introduction text*/
@@ -84,9 +83,7 @@ body .mainContainer .legend {
 body .mainContainer .legend .legend__text {
   display: flex;
   flex-direction: column;
-  justify-content: space-between;
-  height: 700px;
-  padding-top: 150px;
+  padding: 50px 0 0 50px;
 }
 
 body .mainContainer .legend .legend__text .introText {
@@ -95,8 +92,8 @@ body .mainContainer .legend .legend__text .introText {
 
 body .mainContainer .legend .legend__text .introText .introText__heading {
   font-weight: 800;
-  color: black;
-  font-size: 45px;
+  color: #466612;
+  font-size: 42px;
   line-height: 54px;
   margin-bottom: 30px;
 }
@@ -105,10 +102,18 @@ body .mainContainer .legend .legend__text .introText .introText__heading span {
   font-weight: 500;
 }
 
+body .mainContainer .legend .legend__text .introText .introText__description {
+  margin-bottom: 40px;
+}
+
+body .mainContainer .legend .legend__text .introText .introText__link {
+  margin-bottom: 80px;
+}
+
 body .mainContainer .legend .legend__text .introText .introText__link a {
-  color: #000000;
+  color: #466612;
   padding: 8px 0;
-  border-bottom: 2px solid #3D2B00;
+  border-bottom: 2px solid #466612;
   font-weight: 800;
   transition: all;
   transition-duration: 1s;
@@ -121,20 +126,25 @@ body .mainContainer .legend .legend__text .introText .introText__link a:hover, b
 
 body .mainContainer .legend .legend__text .download .download__text {
   font-weight: 800;
-  color: #3D2B00;
+  color: #466612;
 }
 
 body .mainContainer .legend .legend__text .download .download__CTA .download__link {
   margin-right: 16px;
   padding: 10px 3%;
-  color: #FFF1D0;
-  background-color: #756F60;
+  color: #466612;
+  background-color: #D3DBC5;
   border-radius: 4px;
 }
 
 body .mainContainer .legend .legend__text .download .download__CTA .download__link:focus, body .mainContainer .legend .legend__text .download .download__CTA .download__link:hover {
   text-decoration: none;
   filter: invert(100%);
+}
+
+body .mainContainer .legend .legend__image {
+  background-image: url(images/Ellipse.png);
+  background-repeat: no-repeat;
 }
 
 body .mainContainer .legend .legend__image img {
@@ -147,16 +157,15 @@ body .footer {
   height: 50px;
   width: 100%;
   bottom: 0 !important;
-  margin-top: 50px;
-  background-color: #3D2B00;
-  color: #FFF1D0;
+  background-color: #333;
+  color: #CCD4BF;
   display: flex;
   align-items: flex-end;
   justify-content: center;
 }
 
 body .footer .footer__text a {
-  color: green;
+  color: red;
 }
 
 body .footer .footer__text a:hover, body .footer .footer__text a:focus {
@@ -191,33 +200,28 @@ body .footer .footer__text a:hover, body .footer .footer__text a:focus {
 }
 
 @media screen and (max-width: 767px) {
-  body {
-    background-color: #C4BBA5;
-  }
   body .mainContainer {
-    height: 750px !important;
+    height: 850px !important;
     width: 100%;
-    background: transparent;
     padding-top: 20px;
   }
   body .mainContainer .navbar {
     width: 100%;
   }
-  body .mainContainer .navbar .navbar-brand
-.navbar-collapse .navbar-nav .nav-item .nav-link {
+  body .mainContainer .navbar .navbar-collapse .navbar-nav {
+    background-color: #466612;
+  }
+  body .mainContainer .navbar .navbar-collapse .navbar-nav .nav-item .nav-link {
     transition: all;
     transition-duration: 1s;
     color: white;
   }
-  body .mainContainer .navbar .navbar-brand
-.navbar-collapse .navbar-nav .nav-item .nav-link:hover, body .mainContainer .navbar .navbar-brand
-.navbar-collapse .navbar-nav .nav-item .nav-link:active, body .mainContainer .navbar .navbar-brand
-.navbar-collapse .navbar-nav .nav-item .nav-link:focus {
+  body .mainContainer .navbar .navbar-collapse .navbar-nav .nav-item .nav-link:hover, body .mainContainer .navbar .navbar-collapse .navbar-nav .nav-item .nav-link:active, body .mainContainer .navbar .navbar-collapse .navbar-nav .nav-item .nav-link:focus {
     filter: opacity(0.7);
-    border-bottom: 1px solid #3D2B00;
+    border-bottom: 1px solid #466612;
   }
   body .mainContainer .legend {
-    margin-top: 100px !important;
+    margin-top: 150px !important;
     justify-content: space-between;
   }
   body .mainContainer .legend .legend__text {
