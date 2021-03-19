@@ -28,7 +28,7 @@ body{
         background-size:contain;
         background-position: bottom;
         overflow: hidden;
-        padding: 0 3%;
+        padding: 0 8%;
         /*Navigation menu section*/
         .navbar{
             margin: auto;
@@ -81,16 +81,16 @@ body{
                 display: flex;
                 flex-direction: column;
                 justify-content: center;
-                padding: 50px 0 0 0;
+                padding: 50px 0 0 5%;
                 .introText{
                     width: 65%;
                     .introText__heading{
                         font-weight: $bold;
                         color: $primary;
-                        font-size: 42px;
-                        line-height: 54px;
+                        font-size: 48px;
+                        line-height: 57px;
                         margin-bottom: 30px;
-
+                        text-transform: capitalize;
                         span{
                             font-weight: $normal;
                         }
