@@ -1,0 +1,248 @@
+@import url("https://fonts.googleapis.com/css2?family=Lato&display=swap");
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+/*Entire HTML body*/
+body {
+  width: 100%;
+  background-color: #FFFFFE;
+  font-family: Lato;
+  font-size: 16px;
+  color: #00214D;
+  font-weight: 500;
+  /*main container wrapper*/
+  /*footer section*/
+}
+
+body .mainContainer {
+  height: 950px !important;
+  overflow: hidden;
+  background-image: url(images/Vector.png);
+  background-repeat: no-repeat;
+  background-size: contain;
+  background-position: bottom;
+  overflow: hidden;
+  padding: 0 8%;
+  /*Navigation menu section*/
+  /*legend section*/
+}
+
+body .mainContainer .navbar {
+  margin: auto;
+  height: 100px;
+  padding: 0;
+  margin-bottom: 70px;
+}
+
+body .mainContainer .navbar .navbar-brand {
+  color: #00214D;
+  font-weight: 800;
+  font-size: 20px;
+  line-height: 24px;
+  transition: all;
+  transition-duration: 1s;
+}
+
+body .mainContainer .navbar .navbar-brand:hover, body .mainContainer .navbar .navbar-brand:focus {
+  transform: rotateY(180deg);
+  -webkit-text-stroke: 1px #00214D;
+  -webkit-text-fill-color: transparent;
+}
+
+body .mainContainer .navbar .navbar-collapse {
+  justify-content: flex-end;
+}
+
+body .mainContainer .navbar .navbar-collapse .navbar-nav .nav-item {
+  margin-left: 4vw;
+}
+
+body .mainContainer .navbar .navbar-collapse .navbar-nav .nav-item .nav-link {
+  color: #00214D;
+  padding: 10px 0;
+  font-weight: 800;
+  transition: all;
+  transition-duration: 1s;
+}
+
+body .mainContainer .navbar .navbar-collapse .navbar-nav .nav-item .nav-link:hover, body .mainContainer .navbar .navbar-collapse .navbar-nav .nav-item .nav-link:active, body .mainContainer .navbar .navbar-collapse .navbar-nav .nav-item .nav-link:focus {
+  border-bottom: 2px solid #00214D;
+  filter: opacity(0.7);
+}
+
+body .mainContainer .legend {
+  margin: auto;
+  height: 700px;
+  /*legend introduction text*/
+  /*legend image section*/
+}
+
+body .mainContainer .legend .legend__text {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  padding: 50px 0 0 0;
+  height: 700px;
+}
+
+body .mainContainer .legend .legend__text .introText {
+  width: 80%;
+}
+
+body .mainContainer .legend .legend__text .introText .introText__heading {
+  font-weight: 800;
+  color: #00214D;
+  font-size: 48px;
+  line-height: 57px;
+  margin-bottom: 30px;
+  text-transform: capitalize;
+}
+
+body .mainContainer .legend .legend__text .introText .introText__heading span {
+  font-weight: 500;
+}
+
+body .mainContainer .legend .legend__text .introText .introText__description {
+  margin-bottom: 40px;
+  width: 70%;
+}
+
+body .mainContainer .legend .legend__text .introText .introText__link {
+  margin-bottom: 80px;
+}
+
+body .mainContainer .legend .legend__text .introText .introText__link a {
+  color: #00214D;
+  padding: 8px 0;
+  border-bottom: 2px solid #00214D;
+  font-weight: 800;
+  transition: all;
+  transition-duration: 1s;
+}
+
+body .mainContainer .legend .legend__text .introText .introText__link a:hover, body .mainContainer .legend .legend__text .introText .introText__link a:focus {
+  text-decoration: none;
+  filter: blur(1px);
+}
+
+body .mainContainer .legend .legend__text .download .download__text {
+  font-weight: 800;
+  color: #00214D;
+}
+
+body .mainContainer .legend .legend__text .download .download__CTA .download__link {
+  margin-right: 16px;
+  padding: 10px 3%;
+  color: #00214D;
+  background-color: #F2F4F6;
+  border-radius: 4px;
+}
+
+body .mainContainer .legend .legend__text .download .download__CTA .download__link:focus, body .mainContainer .legend .legend__text .download .download__CTA .download__link:hover {
+  text-decoration: none;
+  filter: invert(100%);
+}
+
+body .mainContainer .legend .legend__image img {
+  max-width: 100%;
+  height: auto;
+}
+
+body .footer {
+  text-align: center;
+  height: 50px;
+  width: 100%;
+  bottom: 0 !important;
+  background-color: #00214D;
+  color: #FFFFFE;
+  display: flex;
+  align-items: flex-end;
+  justify-content: center;
+}
+
+body .footer .footer__text a {
+  color: red;
+}
+
+body .footer .footer__text a:hover, body .footer .footer__text a:focus {
+  text-decoration: none;
+}
+
+@media screen and (max-width: 1440px) {
+  body .mainContainer .legend .legend__text .introText {
+    width: 80%;
+  }
+}
+
+@media screen and (max-width: 1350px) {
+  body .mainContainer .legend .legend__text .introText {
+    width: 90%;
+  }
+}
+
+@media screen and (max-width: 1200px) {
+  body .mainContainer .legend .legend__text .introText {
+    width: 100%;
+  }
+}
+
+@media screen and (max-width: 1000px) {
+  body .mainContainer .legend .legend__text .introText {
+    width: 100%;
+  }
+  body .mainContainer .legend .legend__text .introText .introText__heading {
+    font-size: 40px;
+  }
+}
+
+@media screen and (max-width: 767px) {
+  body .mainContainer {
+    height: 850px !important;
+    width: 100%;
+    padding-top: 20px;
+  }
+  body .mainContainer .navbar {
+    width: 100%;
+  }
+  body .mainContainer .navbar .navbar-collapse .navbar-nav {
+    background-color: #00214D;
+  }
+  body .mainContainer .navbar .navbar-collapse .navbar-nav .nav-item .nav-link {
+    transition: all;
+    transition-duration: 1s;
+    color: white;
+  }
+  body .mainContainer .navbar .navbar-collapse .navbar-nav .nav-item .nav-link:hover, body .mainContainer .navbar .navbar-collapse .navbar-nav .nav-item .nav-link:active, body .mainContainer .navbar .navbar-collapse .navbar-nav .nav-item .nav-link:focus {
+    filter: opacity(0.7);
+    border-bottom: 1px solid #00214D;
+  }
+  body .mainContainer .legend {
+    margin-top: 150px !important;
+    justify-content: space-between;
+  }
+  body .mainContainer .legend .legend__text {
+    padding: 0;
+    height: 400px !important;
+  }
+  body .mainContainer .legend .legend__text .introText {
+    width: 100%;
+    text-align: center;
+  }
+  body .mainContainer .legend .legend__text .introText .introText__heading {
+    font-size: 32px;
+  }
+  body .mainContainer .legend .legend__text .download {
+    text-align: center;
+  }
+  body .mainContainer .legend .legend__text .download .download__CTA .download__link {
+    margin-right: 10px;
+    padding: 10px 2% !important;
+  }
+  body .mainContainer .legend .legend__image {
+    display: none;
+  }
+}
+/*# sourceMappingURL=style.css.map */
