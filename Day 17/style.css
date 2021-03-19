@@ -20,11 +20,6 @@ body {
 body .mainContainer {
   height: 950px !important;
   overflow: hidden;
-  background-image: url(images/Vector.png);
-  background-repeat: no-repeat;
-  background-size: contain;
-  background-position: bottom;
-  overflow: hidden;
   padding: 0 8%;
   /*Navigation menu section*/
   /*legend section*/
@@ -149,6 +144,7 @@ body .mainContainer .legend .legend__text .introText__link a:hover, body .mainCo
 }
 
 body .mainContainer .legend .legend__text .icon-wrapper img {
+  margin-right: 10px;
   max-width: 100%;
   height: auto;
   transition: all;
@@ -158,6 +154,10 @@ body .mainContainer .legend .legend__text .icon-wrapper img {
 body .mainContainer .legend .legend__text .icon-wrapper img:hover, body .mainContainer .legend .legend__text .icon-wrapper img:focus {
   cursor: pointer;
   transform: scale(1.2);
+}
+
+body .mainContainer .legend .legend__text .icon-wrapper .mobile {
+  display: none;
 }
 
 body .footer {
@@ -215,8 +215,11 @@ body .footer .footer__text a:hover, body .footer .footer__text a:focus {
   body .mainContainer .legend .legend__text .introText .search {
     width: 70vw;
   }
-  body .mainContainer .legend .legend__image {
+  body .mainContainer .legend .legend__text .icon-wrapper .icon {
     display: none;
+  }
+  body .mainContainer .legend .legend__text .icon-wrapper .mobile {
+    display: block;
   }
 }
 /*# sourceMappingURL=style.css.map */
