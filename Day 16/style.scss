@@ -1,0 +1,282 @@
+@import url('https://fonts.googleapis.com/css2?family=Lato&display=swap');
+$primary: #33272A;
+$background: #FAEEE7;
+$button_bg: #FFC6C7;
+$font: Lato;
+$size: 16px; 
+$normal: 500;
+$bold: 800;
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+/*Entire HTML body*/
+body{
+    width: 100%;
+    background-color: $background;
+    font-family: $font;
+    font-size: $size;
+    color: $primary;
+    font-weight: $normal;
+    /*main container wrapper*/
+    .mainContainer{
+        height: 950px !important;
+        overflow: hidden;
+        background-image: url(images/Vector.png);
+        background-repeat: no-repeat;
+        background-size:contain;
+        background-position: bottom;
+        overflow: hidden;
+        padding: 0 3%;
+        /*Navigation menu section*/
+        .navbar{
+            margin: auto;
+            height: 100px;
+            padding: 0;
+            margin-bottom: 70px;
+    
+            .navbar-brand{
+                color: $primary;
+                font-weight: $bold;
+                font-size: 20px;
+                line-height: 24px;
+                transition: all;
+                transition-duration: 1s;
+
+                &:hover, &:focus{
+                    transform: rotateY(180deg);
+                    -webkit-text-stroke: 1px $primary;
+                    -webkit-text-fill-color: transparent;
+                }
+            }
+    
+            .navbar-collapse{
+                justify-content: flex-end;
+                .navbar-nav{
+                    .nav-item{
+                        margin-left: 4vw;
+                        .nav-link{
+                            color: $primary;
+                            padding: 10px 0;
+                            font-weight: $bold;
+                            transition: all;
+                            transition-duration: 1s;
+    
+                            &:hover, &:active, &:focus{
+                                border-bottom: 2px solid $primary;
+                                filter: opacity(0.7);
+                            }
+                        }
+                    }
+                }
+            }  
+        }
+        /*legend section*/
+        .legend{
+            margin: auto;
+            height: 700px;
+            /*legend introduction text*/
+            .legend__text{
+                display: flex;
+                flex-direction: column;
+                justify-content: center;
+                padding: 50px 0 0 0;
+                .introText{
+                    width: 65%;
+                    .introText__heading{
+                        font-weight: $bold;
+                        color: $primary;
+                        font-size: 42px;
+                        line-height: 54px;
+                        margin-bottom: 30px;
+
+                        span{
+                            font-weight: $normal;
+                        }
+                    }
+                    .introText__description{
+                        margin-bottom: 40px;
+                    }
+                    .introText__link{
+                        margin-bottom: 80px;
+                        a{
+                            color: $primary;
+                            padding: 8px 0;
+                            border-bottom: 2px solid $primary;
+                            font-weight: $bold;
+                            transition: all;
+                            transition-duration: 1s;
+
+                            &:hover, &:focus{
+                                text-decoration: none;
+                                filter: blur(1px);
+                            }
+                        }
+                    }
+                }
+                .download{
+                    .download__text{
+                        font-weight: $bold;
+                        color: $primary;
+                    }
+                    .download__CTA{
+                        .download__link{
+                            margin-right: 16px;
+                            padding: 10px 3%;
+                            color: $primary;
+                            background-color: $button_bg;
+                            border-radius: 4px;
+
+                            &:focus, &:hover{
+                                text-decoration: none;
+                                filter: invert(100%);
+                            }
+                        }
+                    }
+                }
+            }
+            /*legend image section*/
+            .legend__image{
+                img{
+                    max-width: 100%;
+                    height: auto;
+                }
+            }
+        }
+    }
+    /*footer section*/
+    .footer{
+        text-align: center;
+        height: 50px;
+        width: 100%;
+        bottom: 0 !important;
+        background-color: $primary;
+        color: $background;
+        display: flex;
+        align-items: flex-end;
+        justify-content: center;
+        .footer__text{
+            a{
+                color: red;
+
+                &:hover, &:focus{
+                    text-decoration: none;
+                }
+            }
+        }
+    }
+}
+
+@media screen and (max-width: 1440px){
+    body{
+        .mainContainer{
+            .legend{
+                .legend__text{
+                    .introText{
+                        width: 80%;
+                    }
+                }
+            }
+        }
+    }
+}
+@media screen and (max-width: 1350px){
+    body{
+        .mainContainer{
+            .legend{
+                .legend__text{
+                    .introText{
+                        width: 90%;
+                    }
+                }
+            }
+        }
+    }
+}
+@media screen and (max-width: 1200px){
+    body{
+        .mainContainer{ 
+            .legend{
+                .legend__text{
+                    .introText{
+                        width: 100%;
+                    }
+                }
+            }
+        }
+    }
+}
+@media screen and (max-width: 1000px){
+    body{
+        .mainContainer{
+            .legend{
+                .legend__text{
+                    .introText{
+                        width: 100%;
+                        .introText__heading{
+                            font-size: 40px;
+                        }
+                    }
+                }
+            }
+        }
+    }
+}
+@media screen and (max-width: 767px){
+    body{
+        .mainContainer{
+            height: 850px !important;
+            width: 100%;
+            padding-top: 20px;
+            .navbar{
+                width: 100%;
+                .navbar-collapse{
+                    .navbar-nav{
+                        background-color: $primary;
+                        .nav-item{
+                            .nav-link{
+                                transition: all; 
+                                transition-duration: 1s;
+                                color: white;
+                                &:hover, &:active, &:focus{
+                                    filter: opacity(0.7);
+                                    border-bottom: 1px solid $primary;
+                                }
+                            }
+                        }
+                    }
+                }
+            }
+            .legend{
+                margin-top: 150px !important;
+                justify-content: space-between;
+                .legend__text{
+                    padding: 0;
+                    height: 400px !important;
+
+                    .introText{
+                        width: 100%;
+                        text-align: center;
+                        .introText__heading{
+                            font-size: 32px;
+                        }
+                    }
+                   
+                    .download{
+                        text-align: center;
+                        .download__CTA{
+                            .download__link{
+                                margin-right: 10px;
+                                padding: 10px 2% !important;
+                            }
+                        }
+                    }
+                }
+                .legend__image{
+                    display: none;
+                }
+            }
+        }
+    }
+}
