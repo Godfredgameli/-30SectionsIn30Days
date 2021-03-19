@@ -1,6 +1,5 @@
 @import url('https://fonts.googleapis.com/css2?family=Lato&display=swap');
 $primary: #010101;
-$neutral: #94A1B2;
 $background: #FFFFFE;
 $font: Lato;
 $size: 16px;
@@ -22,12 +21,12 @@ body{
     overflow-x: hidden;
     /*main container wrapper*/
     .mainContainer{
-        height: 900px;
+        height: 1000px;
         overflow: hidden;
         padding: 0 8%;
         /*Navigation menu section*/
         .navbar{
-            margin: auto;
+            margin-bottom: 100px;
             height: 70px;
             background-color: $background;
             padding: 0;
@@ -42,8 +41,7 @@ body{
 
                 &:hover, &:focus{
                     transform: scale(1.1);
-                    -webkit-text-stroke: 1px $neutral;
-                    -webkit-text-fill-color: transparent;
+                    text-shadow: 3px 3px 0 #18e657;
                 }
             }
     
@@ -69,45 +67,45 @@ body{
         }
         /*legend section*/
         .legend{
-            height: 700px;
-            margin: auto;
-            display: flex;
-            align-items: center;
-            /*legend introduction text*/
-            .legend__text{
+            height: 800px;
+            /*legend image section*/
+            .legend__image{
                 display: flex;
                 flex-direction: column;
-                padding-top: 150px;
+                justify-content: space-between;
+                height: 800px;
                 .introText{
-                    margin-bottom: 100px;
-                    width: 80%;
+                    margin-bottom: 150px;
+                    display: flex;
+                    align-items: center;
                     .introText__heading{
                         font-weight: $bold;
                         color: $primary;
                         font-size: 45px;
                         line-height: 54px;
                         margin-bottom: 30px;
+                        width: 70%;
+                        margin-left: 5%;
                     }
-                    .introText__description{
-                        color: $neutral;
-                        margin-bottom: 40px;
+                    img{
+                        max-width: 100%;
+                        height: auto;
                     }
-                    .search{
-                        input{
-                            border-radius: 8px 0 0 8px;
-                            border: 1px solid #7F5AF0;
-                            background-color: transparent;
-                        }
-                        .search__button{
-                            button{
-                                background-color: #7F5AF0;
-                                border-color: #7F5AF0;
-                                color: $primary;
-                                border-radius: 0 8px 8px 0;
-                                cursor: pointer;
-                            }
-                        }
-                    }
+                }
+                img{
+                    max-width: 100%;
+                    height: auto;
+                }
+            }
+            /*legend introduction text*/
+            .legend__text{
+                display: flex;
+                flex-direction: column;
+                justify-content: flex-end;
+                padding-bottom: 50px;
+                
+                .introText__description{
+                    margin-bottom: 40px;
                 }
                 .download{
                     .download__text{
@@ -118,8 +116,8 @@ body{
                         .download__link{
                             margin-right: 16px;
                             padding: 10px 3%;
-                            color: $primary;
-                            background-color: $button_bg;
+                            color: $background;
+                            background-color: $primary;
                             border-radius: 4px;
 
                             &:focus, &:hover{
@@ -130,22 +128,6 @@ body{
                     }
                 }
             }
-            /*legend image section*/
-            .legend__image{
-                display: flex;
-                justify-content: center;
-                align-items: flex-start;
-                text-align: right;
-                margin-top: 0;
-                img{
-                    max-width: 100%;
-                    height: auto;
-                }
-                figcaption{
-                    margin-top: 10px;
-                    padding-right: 40px;
-                }
-            }
         }
     }
     /*footer section*/
@@ -154,7 +136,7 @@ body{
         height: 50px;
         width: 100%;
         bottom: 0 !important;
-        background-color: $background;
+        background-color: $primary;
         color: white;
         display: flex;
         align-items: flex-end;
@@ -171,26 +153,23 @@ body{
     }
 }
 
-
-@media screen and (max-width: 1440px){
-    body{
-        .mainContainer{
-            .legend{
-                .legend__text{
-                    width: 90%;
-                   
-                }
-            }
-        }
-    }
-}
-@media screen and (max-width: 1000px){
+@media screen and (max-width: 1100px){
     body{
         .mainContainer{
             padding: 0 4%;
             .legend{
                 .legend__text{
                     width: 100%;
+                    .download{
+                        .download__CTA{
+                            .download__link{
+                                margin-bottom: 10px;
+                                display: block;
+                            }
+                        }
+                    }
+                }
+                .legend__image{
                     .introText{
                         .introText__heading{
                             font-size: 40px;
@@ -204,7 +183,7 @@ body{
 @media screen and (max-width: 767px){
     body{
         .mainContainer{
-            height: 1250px !important;
+            height: 1200px !important;
             width: 0 2%;
             .navbar{
                 .navbar-collapse{
@@ -217,7 +196,7 @@ body{
                                 color: $background;
         
                                 &:hover, &:active, &:focus{
-                                    border-bottom: 1px solid $neutral;
+                                    border-bottom: 1px solid $background;
                                     filter: opacity(0.7);
                                 }
                             }
@@ -226,28 +205,33 @@ body{
                 }
             }
             .legend{
-                margin-top: 150px !important;
+                margin-top: 100px !important;
                 justify-content: space-between;
                 height: 1000px;
                 .legend__text{
                     padding: 0;
-                    height: 500px !important;
+                    height: 200px !important;
 
+                    
+                    .download{
+                        text-align: center;
+                        .download__CTA{
+                            .download__link{
+                                margin-bottom: 10px;
+                                display: inline;
+                            }
+                        }
+                    }
+                }
+                .legend__image{
+                    height: 800px !important;
+                    justify-content: space-evenly;
                     .introText{
                         text-align: center;
                         .introText__heading{
                             font-size: 32px;
                         }
                     }
-                    .search{
-                        width: 90%;
-                    }
-                    .download{
-                        text-align: center;
-                    }
-                }
-                .legend__image{
-                    height: 500px !important;
                 }
             }
         }
