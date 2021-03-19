@@ -46,8 +46,8 @@ body{
                 transition-duration: 1s;
 
                 &:hover, &:focus{
-                    transform: rotateY(180deg);
-                    -webkit-text-stroke: 1px $primary;
+                    transform: scale(1.5);
+                    -webkit-text-stroke: 1px $link_bottom;
                     -webkit-text-fill-color: transparent;
                 }
             }
@@ -65,7 +65,7 @@ body{
                             transition-duration: 1s;
     
                             &:hover, &:active, &:focus{
-                                border-bottom: 2px solid $primary;
+                                border-bottom: 2px solid $link_bottom;
                                 filter: opacity(0.7);
                             }
                         }
@@ -89,8 +89,8 @@ body{
                     .introText__heading{
                         font-weight: $bold;
                         color: $primary;
-                        font-size: 48px;
-                        line-height: 57px;
+                        font-size: 45px;
+                        line-height: 54px;
                         margin-bottom: 30px;
                         text-transform: capitalize;
                         span{
@@ -106,7 +106,7 @@ body{
                         a{
                             color: $primary;
                             padding: 8px 0;
-                            border-bottom: 2px solid $primary;
+                            border-bottom: 2px solid $link_bottom;
                             font-weight: $bold;
                             transition: all;
                             transition-duration: 1s;
@@ -127,7 +127,7 @@ body{
                         .download__link{
                             margin-right: 16px;
                             padding: 10px 3%;
-                            color: $primary;
+                            color: $link_bottom;
                             background-color: $button_bg;
                             border-radius: 4px;
 
@@ -161,7 +161,7 @@ body{
         justify-content: center;
         .footer__text{
             a{
-                color: red;
+                color: $link_bottom;
 
                 &:hover, &:focus{
                     text-decoration: none;
@@ -171,54 +171,18 @@ body{
     }
 }
 
-@media screen and (max-width: 1440px){
-    body{
-        .mainContainer{
-            .legend{
-                .legend__text{
-                    .introText{
-                        width: 80%;
-                    }
-                }
-            }
-        }
-    }
-}
+
 @media screen and (max-width: 1350px){
     body{
         .mainContainer{
             .legend{
                 .legend__text{
                     .introText{
-                        width: 90%;
-                    }
-                }
-            }
-        }
-    }
-}
-@media screen and (max-width: 1200px){
-    body{
-        .mainContainer{ 
-            .legend{
-                .legend__text{
-                    .introText{
-                        width: 100%;
-                    }
-                }
-            }
-        }
-    }
-}
-@media screen and (max-width: 1000px){
-    body{
-        .mainContainer{
-            .legend{
-                .legend__text{
-                    .introText{
-                        width: 100%;
                         .introText__heading{
-                            font-size: 40px;
+                            font-size: 35px;
+                        }
+                        .introText__description{
+                            width: 100%;
                         }
                     }
                 }
