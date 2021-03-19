@@ -142,11 +142,6 @@ body .mainContainer .legend .legend__text .download .download__CTA .download__li
   filter: invert(100%);
 }
 
-body .mainContainer .legend .legend__image {
-  background-image: url(images/Ellipse.png);
-  background-repeat: no-repeat;
-}
-
 body .mainContainer .legend .legend__image img {
   max-width: 100%;
   height: auto;
