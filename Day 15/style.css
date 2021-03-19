@@ -191,6 +191,9 @@ body .footer .footer__text a:hover, body .footer .footer__text a:focus {
 }
 
 @media screen and (max-width: 767px) {
+  body {
+    background-color: #C4BBA5;
+  }
   body .mainContainer {
     height: 750px !important;
     width: 100%;
