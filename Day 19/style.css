@@ -3,7 +3,6 @@
   margin: 0;
   padding: 0;
   box-sizing: border-box;
-  outline: 1px solid red;
 }
 
 /*Entire HTML body*/
@@ -20,8 +19,9 @@ body {
 }
 
 body .mainContainer {
-  height: 900px !important;
+  height: 900px;
   overflow: hidden;
+  padding: 0 8%;
   /*Navigation menu section*/
   /*legend section*/
 }
@@ -29,7 +29,6 @@ body .mainContainer {
 body .mainContainer .navbar {
   margin: auto;
   height: 70px;
-  width: 84%;
   background-color: #16161A;
   padding: 0;
 }
@@ -44,8 +43,9 @@ body .mainContainer .navbar .navbar-brand {
 }
 
 body .mainContainer .navbar .navbar-brand:hover, body .mainContainer .navbar .navbar-brand:focus {
-  transform: rotateY(360deg);
-  filter: invert(0.1);
+  transform: scale(1.1);
+  -webkit-text-stroke: 1px #94A1B2;
+  -webkit-text-fill-color: transparent;
 }
 
 body .mainContainer .navbar .navbar-collapse {
@@ -69,7 +69,6 @@ body .mainContainer .navbar .navbar-collapse .navbar-nav .nav-item .nav-link:hov
 }
 
 body .mainContainer .legend {
-  width: 84%;
   height: 700px;
   margin: auto;
   display: flex;
@@ -172,7 +171,19 @@ body .footer .footer__text a:hover, body .footer .footer__text a:focus {
   text-decoration: none;
 }
 
+@media screen and (max-width: 1440px) {
+  body .mainContainer .legend .legend__text {
+    width: 90%;
+  }
+}
+
 @media screen and (max-width: 1000px) {
+  body .mainContainer {
+    padding: 0 4%;
+  }
+  body .mainContainer .legend .legend__text {
+    width: 100%;
+  }
   body .mainContainer .legend .legend__text .introText .introText__heading {
     font-size: 40px;
   }
@@ -181,10 +192,7 @@ body .footer .footer__text a:hover, body .footer .footer__text a:focus {
 @media screen and (max-width: 767px) {
   body .mainContainer {
     height: 1250px !important;
-    width: 95%;
-  }
-  body .mainContainer .navbar {
-    width: 100%;
+    width: 0 2%;
   }
   body .mainContainer .navbar .navbar-collapse .navbar-nav {
     background-color: #FFFFFE;
@@ -202,14 +210,12 @@ body .footer .footer__text a:hover, body .footer .footer__text a:focus {
     margin-top: 150px !important;
     justify-content: space-between;
     height: 1000px;
-    width: 100%;
   }
   body .mainContainer .legend .legend__text {
     padding: 0;
     height: 500px !important;
   }
   body .mainContainer .legend .legend__text .introText {
-    width: 100%;
     text-align: center;
   }
   body .mainContainer .legend .legend__text .introText .introText__heading {

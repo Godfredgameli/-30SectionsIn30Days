@@ -11,7 +11,6 @@ $bold: 800;
     margin: 0;
     padding: 0;
     box-sizing: border-box;
-    outline: 1px solid red;
 }
 /*Entire HTML body*/
 body{
@@ -24,13 +23,13 @@ body{
     overflow-x: hidden;
     /*main container wrapper*/
     .mainContainer{
-        height: 900px !important;
+        height: 900px;
         overflow: hidden;
+        padding: 0 8%;
         /*Navigation menu section*/
         .navbar{
             margin: auto;
             height: 70px;
-            width: 84%;
             background-color: $background;
             padding: 0;
     
@@ -43,8 +42,9 @@ body{
                 transition-duration: 1s;
 
                 &:hover, &:focus{
-                    transform: rotateY(360deg);
-                    filter:invert(0.1);
+                    transform: scale(1.1);
+                    -webkit-text-stroke: 1px $neutral;
+                    -webkit-text-fill-color: transparent;
                 }
             }
     
@@ -70,7 +70,6 @@ body{
         }
         /*legend section*/
         .legend{
-            width: 84%;
             height: 700px;
             margin: auto;
             display: flex;
@@ -174,11 +173,25 @@ body{
 }
 
 
-@media screen and (max-width: 1000px){
+@media screen and (max-width: 1440px){
     body{
         .mainContainer{
             .legend{
                 .legend__text{
+                    width: 90%;
+                   
+                }
+            }
+        }
+    }
+}
+@media screen and (max-width: 1000px){
+    body{
+        .mainContainer{
+            padding: 0 4%;
+            .legend{
+                .legend__text{
+                    width: 100%;
                     .introText{
                         .introText__heading{
                             font-size: 40px;
@@ -193,9 +206,8 @@ body{
     body{
         .mainContainer{
             height: 1250px !important;
-            width: 95%;
+            width: 0 2%;
             .navbar{
-                width: 100%;
                 .navbar-collapse{
                     .navbar-nav{
                         background-color: $primary;
@@ -218,13 +230,11 @@ body{
                 margin-top: 150px !important;
                 justify-content: space-between;
                 height: 1000px;
-                width: 100%;
                 .legend__text{
                     padding: 0;
                     height: 500px !important;
 
                     .introText{
-                        width: 100%;
                         text-align: center;
                         .introText__heading{
                             font-size: 32px;
