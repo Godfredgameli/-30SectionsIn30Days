@@ -186,9 +186,6 @@ body .footer .footer__text a:hover, body .footer .footer__text a:focus {
     width: 100%;
     padding-top: 20px;
   }
-  body .mainContainer .navbar {
-    width: 100%;
-  }
   body .mainContainer .navbar .navbar-collapse .navbar-nav {
     background-color: #00473E;
   }
@@ -202,7 +199,7 @@ body .footer .footer__text a:hover, body .footer .footer__text a:focus {
     border-bottom: 1px solid #FAAE2B;
   }
   body .mainContainer .legend {
-    margin-top: 150px !important;
+    margin-top: 200px !important;
     justify-content: space-between;
   }
   body .mainContainer .legend .legend__text {
@@ -210,7 +207,6 @@ body .footer .footer__text a:hover, body .footer .footer__text a:focus {
     height: 400px !important;
   }
   body .mainContainer .legend .legend__text .introText {
-    width: 100%;
     text-align: center;
   }
   body .mainContainer .legend .legend__text .introText .introText__heading {

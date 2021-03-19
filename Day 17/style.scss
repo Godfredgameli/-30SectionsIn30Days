@@ -10,7 +10,6 @@ $bold: 800;
     margin: 0;
     padding: 0;
     box-sizing: border-box;
-    // outline: 1px solid red;
 }
 /*Entire HTML body*/
 body{
@@ -186,7 +185,6 @@ body{
             width: 100%;
             padding-top: 20px;
             .navbar{
-                width: 100%;
                 .navbar-collapse{
                     .navbar-nav{
                         background-color: $primary;
@@ -205,14 +203,12 @@ body{
                 }
             }
             .legend{
-                margin-top: 150px !important;
+                margin-top: 200px !important;
                 justify-content: space-between;
                 .legend__text{
                     padding: 0;
                     height: 400px !important;
-
                     .introText{
-                        width: 100%;
                         text-align: center;
                         .introText__heading{
                             font-size: 32px;
