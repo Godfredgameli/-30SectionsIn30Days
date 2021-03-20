@@ -1,8 +1,6 @@
 @import url('https://fonts.googleapis.com/css2?family=Lato&display=swap');
 $primary: #111;
 $background: #FFF;
-$button_bg: #F2F4F6;
-$link_bottom: #FF5470;
 $font: Lato;
 $size: 16px; 
 $normal: 500;
@@ -32,7 +30,6 @@ body{
         padding: 0 8%;
         /*Navigation menu section*/
         .navbar{
-            margin: auto;
             height: 100px;
             padding: 0;
             margin-bottom: 70px;
@@ -77,9 +74,7 @@ body{
             height: 900px;
             /*legend introduction text*/
             .legend__text{
-                display: flex;
-                align-items: center;
-                padding: 50px 0 0 0;
+                padding: 200px 0 0 0;
                 height: 900px;
                 .introText{
                     width: 80%;
@@ -118,6 +113,7 @@ body{
             }
             /*legend image section*/
             .legend__image{
+                height: 900px;
                 display: grid;
                 grid-template-columns: 1fr 1fr;
                 grid-template-rows: 1fr 1fr 1fr ;
@@ -155,24 +151,6 @@ body{
                         height: 100%;
                     }
                 }
-                height: 900px;
-                // display: flex;
-                // justify-content: space-between;
-                // .left{
-                //     width: 49%;
-                //     display: flex;
-                //     flex-direction: column;
-                //     justify-content: space-around;
-                //     width: 100%;
-                //     img{
-                //         width: 100%;
-                //         height: auto;
-                //         object-fit: cover;
-                //     }
-                // }
-                // .right{
-                //     width: 49%;
-                // }
             }
         }
     }
@@ -189,7 +167,7 @@ body{
         justify-content: center;
         .footer__text{
             a{
-                color: $link_bottom;
+                color: red;
 
                 &:hover, &:focus{
                     text-decoration: none;
@@ -218,71 +196,13 @@ body{
         }
     }
 }
-// @media screen and (max-width: 991px){
-//     body{
-//         .mainContainer{
-//             height: 1400px !important;
-//             width: 100%;
-//             padding-top: 20px;
-//             .navbar{
-//                 width: 100%;
-//                 .navbar-collapse{
-//                     .navbar-nav{
-//                         background-color: $primary;
-//                         .nav-item{
-//                             .nav-link{
-//                                 transition: all; 
-//                                 transition-duration: 1s;
-//                                 color: white;
-//                                 &:hover, &:active, &:focus{
-//                                     filter: opacity(0.7);
-//                                     border-bottom: 1px solid $primary;
-//                                 }
-//                             }
-//                         }
-//                     }
-//                 }
-//             }
-//             .legend{
-//                 margin-top: 150px !important;
-//                 justify-content: space-between;
-//                 .legend__text{
-//                     padding: 0;
-//                     height: 200px !important;
-
-//                     .introText{
-//                         width: 100%;
-//                         text-align: center;
-//                         .introText__heading{
-//                             font-size: 32px;
-//                         }
-//                     }
-                   
-//                     .download{
-//                         text-align: center;
-//                         .download__CTA{
-//                             .download__link{
-//                                 margin-right: 10px;
-//                                 padding: 10px 2% !important;
-//                             }
-//                         }
-//                     }
-//                 }
-//                 .legend__image{
-//                     height: 900;
-//                 }
-//             }
-//         }
-//     }
-// }
 @media screen and (max-width: 991px){
     body{
         .mainContainer{
             height: 1700px !important;
             width: 100%;
-            padding-top: 20px;
+            padding: 0 5% !important;
             .navbar{
-                width: 100%;
                 .navbar-collapse{
                     .navbar-nav{
                         background-color: $primary;

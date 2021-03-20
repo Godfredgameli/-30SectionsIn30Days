@@ -31,7 +31,6 @@ body .mainContainer {
 }
 
 body .mainContainer .navbar {
-  margin: auto;
   height: 100px;
   padding: 0;
   margin-bottom: 70px;
@@ -79,9 +78,7 @@ body .mainContainer .legend {
 }
 
 body .mainContainer .legend .legend__text {
-  display: flex;
-  align-items: center;
-  padding: 50px 0 0 0;
+  padding: 200px 0 0 0;
   height: 900px;
 }
 
@@ -126,12 +123,12 @@ body .mainContainer .legend .legend__text .introText .introText__link a:hover, b
 }
 
 body .mainContainer .legend .legend__image {
+  height: 900px;
   display: grid;
   grid-template-columns: 1fr 1fr;
   grid-template-rows: 1fr 1fr 1fr;
   gap: 10px 10px;
   padding: 0;
-  height: 900px;
 }
 
 body .mainContainer .legend .legend__image .left1 {
@@ -187,7 +184,7 @@ body .footer {
 }
 
 body .footer .footer__text a {
-  color: #FF5470;
+  color: red;
 }
 
 body .footer .footer__text a:hover, body .footer .footer__text a:focus {
@@ -207,10 +204,7 @@ body .footer .footer__text a:hover, body .footer .footer__text a:focus {
   body .mainContainer {
     height: 1700px !important;
     width: 100%;
-    padding-top: 20px;
-  }
-  body .mainContainer .navbar {
-    width: 100%;
+    padding: 0 5% !important;
   }
   body .mainContainer .navbar .navbar-collapse .navbar-nav {
     background-color: #111;
