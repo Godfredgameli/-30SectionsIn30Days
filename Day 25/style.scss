@@ -44,7 +44,7 @@ body{
                 transition: all;
                 transition-duration: 1s;
 
-                &:hover, &:focus{
+                &:hover, &:focus, &:active{
                     transform: scale(1.3);
                     text-shadow: 3px 3px 0 cadetblue;
                 }
@@ -77,7 +77,7 @@ body{
             height: 730px;
             /*legend introduction text*/
             .legend__text{
-                padding: 200px 0 0 5%;
+                padding: 100px 0 0 5%;
                 height: 630px;
                 .introText{
                     width: 80%;
@@ -85,11 +85,10 @@ body{
                         font-weight: $bold;
                         color: $primary;
                         font-size: 38px;
-                        line-height: 48px;
+                        line-height: 46px;
                         margin-bottom: 30px;
                     }
                     .introText__description{
-                        width: 85%;
                         margin-bottom: 40px;
                         color: $neutral;
                     }
@@ -108,6 +107,26 @@ body{
                             &:hover, &:focus{
                                 text-decoration: none;
                                 filter: invert(1);
+                            }
+                        }
+                    }
+                }
+                .download{
+                    .download__text{
+                        font-weight: $bold;
+                        color: $primary;
+                    }
+                    .download__CTA{
+                        .download__link{
+                            margin-right: 16px;
+                            padding: 10px 3%;
+                            color: $button_color;
+                            background-color: $button_bg;
+                            border-radius: 4px;
+
+                            &:focus, &:hover{
+                                text-decoration: none;
+                                filter: invert(100%);
                             }
                         }
                     }
@@ -170,7 +189,7 @@ body{
 @media screen and (max-width: 767px){
     body{
         .mainContainer{
-            height: 1300px !important;
+            height: 700px !important;
             width: 100%;
             padding: 0 4% !important;
             .navbar{
@@ -191,10 +210,10 @@ body{
                 }
             }
             .legend{
-                margin-top: 150px !important;
+                margin-top: 100px !important;
                 .legend__text{
                     padding: 0;
-                    height: 300px !important;
+                    height: 500px !important;
 
                     .introText{
                         width: 100%;
@@ -210,7 +229,7 @@ body{
                     }
                 }
                 .legend__image{
-                    height: 650px !important;
+                    display: none;
                 }
             }
         }

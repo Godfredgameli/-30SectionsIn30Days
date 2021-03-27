@@ -44,7 +44,7 @@ body .mainContainer .navbar .navbar-brand {
   transition-duration: 1s;
 }
 
-body .mainContainer .navbar .navbar-brand:hover, body .mainContainer .navbar .navbar-brand:focus {
+body .mainContainer .navbar .navbar-brand:hover, body .mainContainer .navbar .navbar-brand:focus, body .mainContainer .navbar .navbar-brand:active {
   transform: scale(1.3);
   text-shadow: 3px 3px 0 cadetblue;
 }
@@ -78,7 +78,7 @@ body .mainContainer .legend {
 }
 
 body .mainContainer .legend .legend__text {
-  padding: 200px 0 0 5%;
+  padding: 100px 0 0 5%;
   height: 630px;
 }
 
@@ -90,12 +90,11 @@ body .mainContainer .legend .legend__text .introText .introText__heading {
   font-weight: 800;
   color: #030B5C;
   font-size: 38px;
-  line-height: 48px;
+  line-height: 46px;
   margin-bottom: 30px;
 }
 
 body .mainContainer .legend .legend__text .introText .introText__description {
-  width: 85%;
   margin-bottom: 40px;
   color: #020D7B;
 }
@@ -118,6 +117,24 @@ body .mainContainer .legend .legend__text .introText .introText__link a {
 body .mainContainer .legend .legend__text .introText .introText__link a:hover, body .mainContainer .legend .legend__text .introText .introText__link a:focus {
   text-decoration: none;
   filter: invert(1);
+}
+
+body .mainContainer .legend .legend__text .download .download__text {
+  font-weight: 800;
+  color: #030B5C;
+}
+
+body .mainContainer .legend .legend__text .download .download__CTA .download__link {
+  margin-right: 16px;
+  padding: 10px 3%;
+  color: #4A5AFF;
+  background-color: #D1D5FF;
+  border-radius: 4px;
+}
+
+body .mainContainer .legend .legend__text .download .download__CTA .download__link:focus, body .mainContainer .legend .legend__text .download .download__CTA .download__link:hover {
+  text-decoration: none;
+  filter: invert(100%);
 }
 
 body .mainContainer .legend .legend__image img {
@@ -159,7 +176,7 @@ body .footer .footer__text a:hover, body .footer .footer__text a:focus {
 
 @media screen and (max-width: 767px) {
   body .mainContainer {
-    height: 1300px !important;
+    height: 700px !important;
     width: 100%;
     padding: 0 4% !important;
   }
@@ -175,11 +192,11 @@ body .footer .footer__text a:hover, body .footer .footer__text a:focus {
     filter: opacity(0.7);
   }
   body .mainContainer .legend {
-    margin-top: 150px !important;
+    margin-top: 100px !important;
   }
   body .mainContainer .legend .legend__text {
     padding: 0;
-    height: 300px !important;
+    height: 500px !important;
   }
   body .mainContainer .legend .legend__text .introText {
     width: 100%;
@@ -192,7 +209,7 @@ body .footer .footer__text a:hover, body .footer .footer__text a:focus {
     padding: 0 20px;
   }
   body .mainContainer .legend .legend__image {
-    height: 650px !important;
+    display: none;
   }
 }
 /*# sourceMappingURL=style.css.map */
