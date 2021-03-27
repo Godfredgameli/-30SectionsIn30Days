@@ -4,7 +4,7 @@ $background: #C3E2F9;
 $neutral: #2E2E2E;
 $font: Lato;
 $size: 16px; 
-$normal: 500;
+$normal: 400;
 $bold: 800;
 *{
     margin: 0;
@@ -73,19 +73,39 @@ body{
             height: 730px;
             /*legend introduction text*/
             .legend__text{
-                padding: 200px 0 0 0;
+                padding: 200px 0 0 5%;
                 height: 630px;
                 .introText{
                     width: 80%;
                     .introText__heading{
                         font-weight: $bold;
                         color: $primary;
-                        font-size: 38px;
-                        line-height: 46px;
+                        font-size: 42px;
+                        line-height: 54px;
                         margin-bottom: 30px;
                     }
                     .introText__description{
+                        height: 80px;
+                        width: 85%;
+                        font-weight: bold;
+                        background-color: white;
+                        border-radius: 8px;
                         margin-bottom: 40px;
+                        display: flex;
+                        justify-content: space-evenly;
+                        align-items: center;
+                        div{
+                            font-size: 12px;
+                            padding: 0 20px;
+                            a{
+                                color: $primary;
+                                font-weight: $normal;
+                            }
+                        }
+                        .middle{
+                            border-left: 1px solid black;
+                            border-right: 1px solid black;
+                        }
                     }
                     .introText__link{
                         margin-bottom: 80px;
@@ -151,6 +171,9 @@ body{
                         }
                         .introText__description{
                             width: 100%;
+                            div{
+                                padding: 0 10px;
+                            }
                         }
                     }
                 }
@@ -192,6 +215,11 @@ body{
                         text-align: center;
                         .introText__heading{
                             font-size: 32px;
+                        }
+                        .introText__description{
+                            div{
+                                padding: 0 20px ;
+                            }
                         }
                     }
                 }

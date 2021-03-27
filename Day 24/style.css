@@ -12,7 +12,7 @@ body {
   font-family: Lato;
   font-size: 16px;
   color: #021D30;
-  font-weight: 500;
+  font-weight: 400;
   /*main container wrapper*/
   /*footer section*/
 }
@@ -76,7 +76,7 @@ body .mainContainer .legend {
 }
 
 body .mainContainer .legend .legend__text {
-  padding: 200px 0 0 0;
+  padding: 200px 0 0 5%;
   height: 630px;
 }
 
@@ -87,13 +87,36 @@ body .mainContainer .legend .legend__text .introText {
 body .mainContainer .legend .legend__text .introText .introText__heading {
   font-weight: 800;
   color: #021D30;
-  font-size: 38px;
-  line-height: 46px;
+  font-size: 42px;
+  line-height: 54px;
   margin-bottom: 30px;
 }
 
 body .mainContainer .legend .legend__text .introText .introText__description {
+  height: 80px;
+  width: 85%;
+  font-weight: bold;
+  background-color: white;
+  border-radius: 8px;
   margin-bottom: 40px;
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+}
+
+body .mainContainer .legend .legend__text .introText .introText__description div {
+  font-size: 12px;
+  padding: 0 20px;
+}
+
+body .mainContainer .legend .legend__text .introText .introText__description div a {
+  color: #021D30;
+  font-weight: 400;
+}
+
+body .mainContainer .legend .legend__text .introText .introText__description .middle {
+  border-left: 1px solid black;
+  border-right: 1px solid black;
 }
 
 body .mainContainer .legend .legend__text .introText .introText__link {
@@ -148,6 +171,9 @@ body .footer .footer__text a:hover, body .footer .footer__text a:focus {
   body .mainContainer .legend .legend__text .introText .introText__description {
     width: 100%;
   }
+  body .mainContainer .legend .legend__text .introText .introText__description div {
+    padding: 0 10px;
+  }
 }
 
 @media screen and (max-width: 767px) {
@@ -180,6 +206,9 @@ body .footer .footer__text a:hover, body .footer .footer__text a:focus {
   }
   body .mainContainer .legend .legend__text .introText .introText__heading {
     font-size: 32px;
+  }
+  body .mainContainer .legend .legend__text .introText .introText__description div {
+    padding: 0 20px;
   }
   body .mainContainer .legend .legend__image {
     height: 650px !important;
