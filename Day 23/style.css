@@ -18,7 +18,7 @@ body {
 }
 
 body .mainContainer {
-  height: 1200px !important;
+  height: 900px !important;
   overflow: hidden;
   background-image: url(images/Vector.png);
   background-repeat: no-repeat;
@@ -67,19 +67,18 @@ body .mainContainer .navbar .navbar-collapse .navbar-nav .nav-item .nav-link {
 }
 
 body .mainContainer .navbar .navbar-collapse .navbar-nav .nav-item .nav-link:hover, body .mainContainer .navbar .navbar-collapse .navbar-nav .nav-item .nav-link:active, body .mainContainer .navbar .navbar-collapse .navbar-nav .nav-item .nav-link:focus {
-  border-bottom: 2px solid #181818;
-  filter: opacity(0.7);
+  transform: skewX(10deg);
 }
 
 body .mainContainer .legend {
-  height: 900px;
+  height: 730px;
   /*legend introduction text*/
   /*legend image section*/
 }
 
 body .mainContainer .legend .legend__text {
   padding: 200px 0 0 0;
-  height: 900px;
+  height: 630px;
 }
 
 body .mainContainer .legend .legend__text .introText {
@@ -96,7 +95,6 @@ body .mainContainer .legend .legend__text .introText .introText__heading {
 
 body .mainContainer .legend .legend__text .introText .introText__description {
   margin-bottom: 40px;
-  width: 70%;
 }
 
 body .mainContainer .legend .legend__text .introText .introText__link {
@@ -105,8 +103,10 @@ body .mainContainer .legend .legend__text .introText .introText__link {
 
 body .mainContainer .legend .legend__text .introText .introText__link a {
   color: #181818;
-  padding: 8px 0;
-  border-bottom: 2px solid #181818;
+  padding: 20px 10%;
+  background-color: #4FC4CF;
+  border-radius: 4px;
+  color: white;
   font-weight: 800;
   transition: all;
   transition-duration: 1s;
@@ -114,7 +114,23 @@ body .mainContainer .legend .legend__text .introText .introText__link a {
 
 body .mainContainer .legend .legend__text .introText .introText__link a:hover, body .mainContainer .legend .legend__text .introText .introText__link a:focus {
   text-decoration: none;
-  filter: blur(1px);
+  filter: invert(1);
+}
+
+body .mainContainer .legend .legend__image {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 100px 0 0 0;
+  height: 630px;
+  background: url(images/pattern_top.png), url(images/pattern_bottom.png);
+  background-repeat: no-repeat;
+  background-position: top left, bottom right;
+}
+
+body .mainContainer .legend .legend__image img {
+  max-width: 100%;
+  height: auto;
 }
 
 body .footer {
@@ -146,11 +162,11 @@ body .footer .footer__text a:hover, body .footer .footer__text a:focus {
   }
 }
 
-@media screen and (max-width: 991px) {
+@media screen and (max-width: 767px) {
   body .mainContainer {
-    height: 1700px !important;
+    height: 1300px !important;
     width: 100%;
-    padding: 0 5% !important;
+    padding: 0 4% !important;
   }
   body .mainContainer .navbar .navbar-collapse .navbar-nav {
     background-color: #181818;
@@ -162,15 +178,13 @@ body .footer .footer__text a:hover, body .footer .footer__text a:focus {
   }
   body .mainContainer .navbar .navbar-collapse .navbar-nav .nav-item .nav-link:hover, body .mainContainer .navbar .navbar-collapse .navbar-nav .nav-item .nav-link:active, body .mainContainer .navbar .navbar-collapse .navbar-nav .nav-item .nav-link:focus {
     filter: opacity(0.7);
-    border-bottom: 1px solid #181818;
   }
   body .mainContainer .legend {
     margin-top: 150px !important;
-    justify-content: space-between;
   }
   body .mainContainer .legend .legend__text {
     padding: 0;
-    height: 400px !important;
+    height: 300px !important;
   }
   body .mainContainer .legend .legend__text .introText {
     width: 100%;
@@ -178,6 +192,9 @@ body .footer .footer__text a:hover, body .footer .footer__text a:focus {
   }
   body .mainContainer .legend .legend__text .introText .introText__heading {
     font-size: 32px;
+  }
+  body .mainContainer .legend .legend__image {
+    height: 650px !important;
   }
 }
 /*# sourceMappingURL=style.css.map */
