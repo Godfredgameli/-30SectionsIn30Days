@@ -1,0 +1,240 @@
+@import url("https://fonts.googleapis.com/css2?family=Lato&display=swap");
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+/*Entire HTML body*/
+body {
+  width: 100%;
+  background-color: #E3F6F5;
+  font-family: Lato;
+  font-size: 16px;
+  color: #0C0C0C;
+  font-weight: 500;
+  /*main container wrapper*/
+  /*footer section*/
+}
+
+body .mainContainer {
+  height: 1000px !important;
+  overflow: hidden;
+  background-repeat: no-repeat;
+  background-size: contain;
+  background-position: bottom;
+  overflow: hidden;
+  background-image: url(images/studio.png);
+  background-position: right;
+  background-repeat: no-repeat;
+  background-size: 50% 100%;
+  /*legend section*/
+}
+
+body .mainContainer .legend {
+  height: 830px;
+  /*legend introduction text*/
+  /*legend image section*/
+}
+
+body .mainContainer .legend .legend__text {
+  height: 730px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  padding-left: 1%;
+  /*Navigation menu section*/
+}
+
+body .mainContainer .legend .legend__text .navbar {
+  height: 100px;
+  padding: 0;
+  margin-bottom: 70px;
+}
+
+body .mainContainer .legend .legend__text .navbar .navbar-brand {
+  color: #0C0C0C;
+  font-weight: 800;
+  font-size: 20px;
+  line-height: 24px;
+  transition: all;
+  transition-duration: 1s;
+}
+
+body .mainContainer .legend .legend__text .navbar .navbar-brand:hover, body .mainContainer .legend .legend__text .navbar .navbar-brand:focus {
+  transform: scale(1.3);
+  text-shadow: 3px 3px 0 cadetblue;
+}
+
+body .mainContainer .legend .legend__text .navbar .navbar-collapse .navbar-nav {
+  justify-content: flex-end;
+  width: 100%;
+}
+
+body .mainContainer .legend .legend__text .navbar .navbar-collapse .navbar-nav .nav-item {
+  margin-left: 2vw;
+}
+
+body .mainContainer .legend .legend__text .navbar .navbar-collapse .navbar-nav .nav-item .nav-link {
+  color: #0C0C0C;
+  padding: 10px 20px;
+  font-weight: 800;
+  transition: all;
+  transition-duration: 1s;
+}
+
+body .mainContainer .legend .legend__text .navbar .navbar-collapse .navbar-nav .nav-item .nav-link:hover, body .mainContainer .legend .legend__text .navbar .navbar-collapse .navbar-nav .nav-item .nav-link:active, body .mainContainer .legend .legend__text .navbar .navbar-collapse .navbar-nav .nav-item .nav-link:focus {
+  outline: 1px solid #272343;
+}
+
+body .mainContainer .legend .legend__text .introText {
+  width: 65%;
+  margin-left: 5%;
+}
+
+body .mainContainer .legend .legend__text .introText .introText__heading {
+  font-weight: 800;
+  color: #0C0C0C;
+  font-size: 48px;
+  line-height: 58px;
+  margin-bottom: 30px;
+}
+
+body .mainContainer .legend .legend__text .introText .introText__description {
+  margin-bottom: 40px;
+}
+
+body .mainContainer .legend .legend__text .introText .introText__link {
+  margin-bottom: 80px;
+}
+
+body .mainContainer .legend .legend__text .introText .introText__link a {
+  color: #0C0C0C;
+  padding: 20px 10%;
+  background-color: #272343;
+  border-radius: 4px;
+  color: #FFD803;
+  font-weight: 800;
+  transition: all;
+  transition-duration: 1s;
+}
+
+body .mainContainer .legend .legend__text .introText .introText__link a:hover, body .mainContainer .legend .legend__text .introText .introText__link a:focus {
+  text-decoration: none;
+  filter: invert(1);
+}
+
+body .mainContainer .legend .legend__text .download {
+  margin-left: 5%;
+}
+
+body .mainContainer .legend .legend__text .download .download__text {
+  font-weight: 800;
+  color: #0C0C0C;
+}
+
+body .mainContainer .legend .legend__text .download .download__CTA .download__link {
+  margin-right: 16px;
+  padding: 10px 3%;
+  color: #272343;
+  background-color: #BAE8E8;
+  border-radius: 4px;
+}
+
+body .mainContainer .legend .legend__text .download .download__CTA .download__link:focus, body .mainContainer .legend .legend__text .download .download__CTA .download__link:hover {
+  text-decoration: none;
+  filter: invert(100%);
+}
+
+body .mainContainer .legend .legend__image {
+  content: " ";
+}
+
+body .footer {
+  text-align: center;
+  height: 50px;
+  width: 100%;
+  bottom: 0 !important;
+  background-color: #0C0C0C;
+  color: #E3F6F5;
+  display: flex;
+  align-items: flex-end;
+  justify-content: center;
+}
+
+body .footer .footer__text a {
+  color: red;
+}
+
+body .footer .footer__text a:hover, body .footer .footer__text a:focus {
+  text-decoration: none;
+}
+
+@media screen and (max-width: 1440px) {
+  body .mainContainer .legend .legend__text .introText .introText__heading {
+    font-size: 35px;
+  }
+  body .mainContainer .legend .legend__text .introText .introText__description {
+    width: 100%;
+  }
+}
+
+@media screen and (max-width: 1050px) {
+  body .mainContainer .legend .legend__text .introText {
+    width: 90%;
+  }
+  body .mainContainer .legend .legend__text .introText .introText__heading {
+    font-size: 32px;
+  }
+  body .mainContainer .legend .legend__text .introText .introText__description {
+    width: 100%;
+  }
+}
+
+@media screen and (max-width: 767px) {
+  body .mainContainer {
+    height: 600px !important;
+    width: 100%;
+    padding: 0 4% !important;
+    background-image: linear-gradient(rgba(0, 0, 0, 0.2), rgba(0, 0, 0, 0.2)), url(images/studio.png);
+    background-size: 100% 100%;
+  }
+  body .mainContainer .navbar .navbar-collapse .navbar-nav {
+    background-color: #0C0C0C;
+  }
+  body .mainContainer .navbar .navbar-collapse .navbar-nav .nav-item .nav-link {
+    transition: all;
+    transition-duration: 1s;
+    color: white;
+  }
+  body .mainContainer .navbar .navbar-collapse .navbar-nav .nav-item .nav-link:hover, body .mainContainer .navbar .navbar-collapse .navbar-nav .nav-item .nav-link:active, body .mainContainer .navbar .navbar-collapse .navbar-nav .nav-item .nav-link:focus {
+    filter: opacity(0.7);
+  }
+  body .mainContainer .legend {
+    margin-top: 20px !important;
+  }
+  body .mainContainer .legend .legend__text {
+    padding: 0;
+    height: 300px !important;
+    color: white;
+  }
+  body .mainContainer .legend .legend__text .navbar .navbar-brand {
+    color: white;
+  }
+  body .mainContainer .legend .legend__text .introText {
+    width: 100%;
+    text-align: center;
+    margin-left: 0;
+  }
+  body .mainContainer .legend .legend__text .introText .introText__heading {
+    font-size: 32px;
+    color: white;
+  }
+  body .mainContainer .legend .legend__text .download {
+    text-align: center;
+  }
+  body .mainContainer .legend .legend__image {
+    display: none;
+  }
+}
+/*# sourceMappingURL=style.css.map */
