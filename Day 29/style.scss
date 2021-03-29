@@ -11,12 +11,15 @@ $bold: 800;
     margin: 0;
     padding: 0;
     box-sizing: border-box;
-    outline: 1px solid red;
 }
 /*Entire HTML body*/
 body{
     width: 100%;
     background-color: $background;
+    background-image: url(images/Ellipse.png);
+    background-position: right;
+    background-size: 50% 100%;
+    background-repeat: no-repeat;
     font-family: $font;
     font-size: $size;
     color: $primary;

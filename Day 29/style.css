@@ -3,13 +3,16 @@
   margin: 0;
   padding: 0;
   box-sizing: border-box;
-  outline: 1px solid red;
 }
 
 /*Entire HTML body*/
 body {
   width: 100%;
   background-color: #F9F4EF;
+  background-image: url(images/Ellipse.png);
+  background-position: right;
+  background-size: 50% 100%;
+  background-repeat: no-repeat;
   font-family: Lato;
   font-size: 16px;
   color: #020826;
