@@ -3,6 +3,7 @@
   margin: 0;
   padding: 0;
   box-sizing: border-box;
+  outline: 1px solid red;
 }
 
 /*Entire HTML body*/
@@ -18,7 +19,7 @@ body {
 }
 
 body .mainContainer {
-  height: 1000px !important;
+  height: 1050px !important;
   overflow: hidden;
   background-repeat: no-repeat;
   background-size: contain;
@@ -44,6 +45,8 @@ body .mainContainer .navbar .navbar-brand {
   transition-duration: 1s;
   position: absolute;
   margin-left: 45%;
+  padding: 0 5px;
+  border-bottom: 11px solid #FEE6C3;
 }
 
 body .mainContainer .navbar .navbar-brand:hover, body .mainContainer .navbar .navbar-brand:focus {
@@ -63,16 +66,14 @@ body .mainContainer .navbar .navbar-collapse .navbar-nav .nav-item .nav-link {
   color: #0c0c0c;
   padding: 10px 20px;
   font-weight: 800;
-  transition: all;
-  transition-duration: 1s;
 }
 
 body .mainContainer .navbar .navbar-collapse .navbar-nav .search {
-  margin-left: 80%;
+  margin-left: 90%;
 }
 
 body .mainContainer .legend {
-  height: 830px;
+  height: 880px;
   /*legend introduction text*/
   /*legend image section*/
 }
@@ -93,9 +94,13 @@ body .mainContainer .legend .legend__text .introText {
 body .mainContainer .legend .legend__text .introText .introText__heading {
   font-weight: 800;
   color: #0c0c0c;
-  font-size: 38px;
-  line-height: 46px;
+  font-size: 48px;
+  line-height: 58px;
   margin-bottom: 30px;
+}
+
+body .mainContainer .legend .legend__text .introText .introText__heading span {
+  border-bottom: 20px solid #FEE6C3;
 }
 
 body .mainContainer .legend .legend__text .introText .introText__description {
@@ -120,9 +125,31 @@ body .mainContainer .legend .legend__text .introText .introText__link a:hover, b
   filter: invert(1);
 }
 
+body .mainContainer .legend .legend__image {
+  height: 830px;
+  display: flex;
+  justify-content: flex-end;
+  align-items: flex-end;
+}
+
+body .mainContainer .legend .legend__image .right {
+  padding: 0;
+}
+
+body .mainContainer .legend .legend__image .right .top {
+  margin-bottom: 50px;
+  height: auto;
+}
+
+body .mainContainer .legend .legend__image .right img {
+  max-width: 300px;
+  height: auto;
+}
+
 body .mainContainer .legend .legend__image img {
   max-width: 100%;
   height: auto;
+  margin-right: 50px;
 }
 
 body .footer {
@@ -146,8 +173,11 @@ body .footer .footer__text a:hover, body .footer .footer__text a:focus {
 }
 
 @media screen and (max-width: 1440px) {
+  body .mainContainer {
+    padding: 0 2%;
+  }
   body .mainContainer .navbar .navbar-collapse .navbar-nav .search {
-    margin-left: 45%;
+    margin-left: 80%;
   }
   body .mainContainer .legend .legend__text .introText .introText__heading {
     font-size: 35px;
@@ -157,31 +187,9 @@ body .footer .footer__text a:hover, body .footer .footer__text a:focus {
   }
 }
 
-@media screen and (max-width: 1300px) {
-  body .mainContainer .navbar .navbar-collapse .navbar-nav .search {
-    margin-left: 40%;
-  }
-  body .mainContainer .legend .legend__text .introText .introText__heading {
-    font-size: 35px;
-  }
-  body .mainContainer .legend .legend__text .introText .introText__description {
-    width: 100%;
-  }
-}
-
-@media screen and (max-width: 1170px) {
-  body .mainContainer .navbar .navbar-collapse .navbar-nav .search {
-    margin-left: 30%;
-  }
-}
-
-@media screen and (max-width: 970px) {
-  body .mainContainer .navbar .navbar-brand {
-    position: relative;
-    margin-left: 0;
-  }
-  body .mainContainer .navbar .navbar-collapse .navbar-nav .search {
-    margin-left: 2vw;
+@media screen and (max-width: 1000px) {
+  body .mainContainer .legend .legend__image .right {
+    display: none;
   }
 }
 
@@ -189,10 +197,16 @@ body .footer .footer__text a:hover, body .footer .footer__text a:focus {
   body .mainContainer {
     height: 700px !important;
     width: 100%;
-    padding: 0 4% !important;
+  }
+  body .mainContainer .navbar .navbar-brand {
+    position: relative;
+    margin-left: 0;
   }
   body .mainContainer .navbar .navbar-collapse .navbar-nav {
     background-color: #0c0c0c;
+  }
+  body .mainContainer .navbar .navbar-collapse .navbar-nav .search {
+    margin-left: 2vw;
   }
   body .mainContainer .navbar .navbar-collapse .navbar-nav .nav-item .nav-link {
     transition: all;
