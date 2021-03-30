@@ -3,7 +3,6 @@
   margin: 0;
   padding: 0;
   box-sizing: border-box;
-  outline: 1px solid red;
 }
 
 /*Entire HTML body*/
@@ -69,7 +68,22 @@ body .mainContainer .navbar .navbar-collapse .navbar-nav .nav-item .nav-link {
 }
 
 body .mainContainer .navbar .navbar-collapse .navbar-nav .search {
-  margin-left: 90%;
+  margin-left: 70%;
+}
+
+body .mainContainer .navbar .navbar-collapse .navbar-nav .search div {
+  border: 1px solid #0C0C0C;
+  display: flex;
+  align-items: center;
+  height: 50px;
+  padding: 0 30px 0 10px;
+  border-radius: 25px;
+}
+
+body .mainContainer .navbar .navbar-collapse .navbar-nav .search div input {
+  margin-left: 10px;
+  border: none;
+  background-color: transparent;
 }
 
 body .mainContainer .legend {
@@ -177,7 +191,7 @@ body .footer .footer__text a:hover, body .footer .footer__text a:focus {
     padding: 0 2%;
   }
   body .mainContainer .navbar .navbar-collapse .navbar-nav .search {
-    margin-left: 80%;
+    margin-left: 65%;
   }
   body .mainContainer .legend .legend__text .introText .introText__heading {
     font-size: 35px;
@@ -188,6 +202,12 @@ body .footer .footer__text a:hover, body .footer .footer__text a:focus {
 }
 
 @media screen and (max-width: 1000px) {
+  body .mainContainer .navbar .navbar-collapse .navbar-nav .search {
+    margin-left: 55%;
+  }
+  body .mainContainer .legend .legend__image {
+    height: 730px;
+  }
   body .mainContainer .legend .legend__image .right {
     display: none;
   }
@@ -195,7 +215,7 @@ body .footer .footer__text a:hover, body .footer .footer__text a:focus {
 
 @media screen and (max-width: 767px) {
   body .mainContainer {
-    height: 700px !important;
+    height: 1400px !important;
     width: 100%;
   }
   body .mainContainer .navbar .navbar-brand {
@@ -234,7 +254,16 @@ body .footer .footer__text a:hover, body .footer .footer__text a:focus {
     text-align: center;
   }
   body .mainContainer .legend .legend__image {
-    display: none;
+    height: 700px;
+  }
+  body .mainContainer .legend .legend__image .right {
+    display: block;
+  }
+  body .mainContainer .legend .legend__image .right .top {
+    margin-bottom: 20px;
+  }
+  body .mainContainer .legend .legend__image img {
+    margin-right: 20px;
   }
 }
 /*# sourceMappingURL=style.css.map */
