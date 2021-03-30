@@ -3,7 +3,6 @@
   margin: 0;
   padding: 0;
   box-sizing: border-box;
-  outline: 1px solid red;
 }
 
 /*Entire HTML body*/
@@ -19,21 +18,22 @@ body {
 }
 
 body .mainContainer {
-  height: 1000px !important;
+  height: 900px !important;
   overflow: hidden;
   background-repeat: no-repeat;
   background-size: contain;
   background-position: bottom;
   overflow: hidden;
-  padding: 0 8%;
   /*Navigation menu section*/
   /*legend section*/
 }
 
 body .mainContainer .navbar {
   height: 100px;
-  padding: 0;
+  width: 100%;
+  padding: 0 8%;
   margin-bottom: 70px;
+  border-bottom: 2px solid #ccc;
 }
 
 body .mainContainer .navbar .navbar-brand {
@@ -65,12 +65,9 @@ body .mainContainer .navbar .navbar-collapse .navbar-nav .nav-item .nav-link {
   font-weight: 800;
 }
 
-body .mainContainer .navbar .navbar-collapse .navbar-nav .search {
-  margin-left: 50%;
-}
-
 body .mainContainer .legend {
   height: 830px;
+  padding: 0 8%;
   /*legend introduction text*/
   /*legend image section*/
 }
@@ -90,12 +87,23 @@ body .mainContainer .legend .legend__text .introText .introText__heading {
 }
 
 body .mainContainer .legend .legend__text .introText .introText__description {
-  content: " ";
   background-image: url(images/download.png);
   background-repeat: no-repeat;
   width: 100%;
   height: 400px;
   background-size: 100% 100%;
+  color: white;
+  padding-left: 20px;
+  display: flex;
+  align-items: flex-end;
+}
+
+body .mainContainer .legend .legend__text .introText .introText__description p {
+  font-weight: 800;
+}
+
+body .mainContainer .legend .legend__text .introText .introText__description p span {
+  font-size: 38px;
 }
 
 body .mainContainer .legend .legend__image {
@@ -129,51 +137,15 @@ body .footer .footer__text a:hover, body .footer .footer__text a:focus {
   text-decoration: none;
 }
 
-@media screen and (max-width: 1440px) {
-  body .mainContainer .navbar .navbar-collapse .navbar-nav .search {
-    margin-left: 45%;
-  }
-  body .mainContainer .legend .legend__text .introText .introText__heading {
-    font-size: 35px;
-  }
-  body .mainContainer .legend .legend__text .introText .introText__description {
+@media screen and (max-width: 767px) {
+  body .mainContainer {
+    height: 1300px !important;
     width: 100%;
+    padding: 0 4% !important;
   }
-}
-
-@media screen and (max-width: 1300px) {
-  body .mainContainer .navbar .navbar-collapse .navbar-nav .search {
-    margin-left: 40%;
-  }
-  body .mainContainer .legend .legend__text .introText .introText__heading {
-    font-size: 35px;
-  }
-  body .mainContainer .legend .legend__text .introText .introText__description {
-    width: 100%;
-  }
-}
-
-@media screen and (max-width: 1170px) {
-  body .mainContainer .navbar .navbar-collapse .navbar-nav .search {
-    margin-left: 30%;
-  }
-}
-
-@media screen and (max-width: 970px) {
   body .mainContainer .navbar .navbar-brand {
     position: relative;
     margin-left: 0;
-  }
-  body .mainContainer .navbar .navbar-collapse .navbar-nav .search {
-    margin-left: 2vw;
-  }
-}
-
-@media screen and (max-width: 767px) {
-  body .mainContainer {
-    height: 700px !important;
-    width: 100%;
-    padding: 0 4% !important;
   }
   body .mainContainer .navbar .navbar-collapse .navbar-nav {
     background-color: #000000;
@@ -191,7 +163,7 @@ body .footer .footer__text a:hover, body .footer .footer__text a:focus {
   }
   body .mainContainer .legend .legend__text {
     padding: 0;
-    height: 300px !important;
+    height: 600px !important;
   }
   body .mainContainer .legend .legend__text .introText {
     width: 100%;
@@ -204,7 +176,7 @@ body .footer .footer__text a:hover, body .footer .footer__text a:focus {
     text-align: center;
   }
   body .mainContainer .legend .legend__image {
-    display: none;
+    height: 300px;
   }
 }
 /*# sourceMappingURL=style.css.map */
